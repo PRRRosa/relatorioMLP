@@ -15,6 +15,7 @@
 % (a A seguir podem ser importados os pacotes necessários para o documento, de acordo 
 % com a necessidade)
 %
+\usepackage{verbatim}
 \usepackage[brazilian]{babel}	    % para texto escrito em pt-br
 \usepackage[utf8]{inputenc}         % pacote para acentuação
 \usepackage{graphicx}         	    % pacote para importar figuras
@@ -73,10 +74,12 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % título
-\title{Um Modelo de Relatório para a Disciplina de MLP do Instituto de Informática da UFRGS} 
+\title{Jogo Pedagógico em C++} 
 
 % autor
-\author{Autores(s)}{Aluno(s)} % {sobrenome}{nome}
+\author{Dalcin}{Leonardo} % {sobrenome}{nome}
+\author{Ramos da Rosa}{Paulo Ricardo} 
+\author{Degrazia}{Pietro} 
 %\author{Autor2}{Aluno} % {sobrenome}{nome} 1 para cada aluno
 
 % Professor orientador da disciplina
@@ -89,7 +92,7 @@
 \location{Porto Alegre}{RS} 
 
 % data da entrega do trabalho (mês e ano)
-\date{12}{2017}
+\date{12}{2018}
 
 
 % Palavras chave
@@ -131,29 +134,36 @@
 %
 \chapter{Introdução} \label{intro}
 
-Este capítulo tem o objetivo de descrever os detalhes necessários à correta formatação do documento. As informações aqui apresentadas devem ser suficientes para formatar corretamente o documento no ambiente \LaTeX.
+%Este capítulo tem o objetivo de descrever os detalhes necessários à correta formatação do documento. As informações aqui apresentadas devem ser suficientes para formatar corretamente o documento no ambiente \LaTeX.
 
-Os \textbf{Capítulos} são sempre iniciados com o comando \texttt{\char'134chapter}, que coloca-os em uma nova folha, em letras maiúsculas, numerados e  alinhados à esquerda. Para os \textbf{capítulos não-numerados} (Listas, Resumo, Abstract, Referências, etc.), o título é centralizado na linha Para tanto, usar o comando \texttt{\char'134chapter*}. Para ambos, são deixados 90 pt de espaçamento anterior (ou seja, distância da margem superior) e 42 pt de espaçamento posterior (espaço até o início do texto ou primeira subdivisão). 
+%Os \textbf{Capítulos} são sempre iniciados com o comando \texttt{\char'134chapter}, que coloca-os em uma nova folha, em letras maiúsculas, numerados e  alinhados à esquerda. Para os \textbf{capítulos não-numerados} (Listas, Resumo, Abstract, Referências, etc.), o título é centralizado na linha Para tanto, usar o comando \texttt{\char'134chapter*}. Para ambos, são deixados 90 pt de espaçamento anterior (ou seja, distância da margem superior) e 42 pt de espaçamento posterior (espaço até o início do texto ou primeira subdivisão). 
 
-Todos os \textbf{demais parágrafos de texto} são escritos em espaçamento simples, com observância de 6 pt de espaçamento em relação ao parágrafo seguinte. O estilo atual já considera essas retrições. 
+%Todos os \textbf{demais parágrafos de texto} são escritos em espaçamento simples, com observância de 6 pt de espaçamento em relação ao parágrafo seguinte. O estilo atual já considera essas retrições. 
 
+Este trabalho tem como objetivo a implementação em C++ de um jogo pedagógico com perguntas e respostas sobre diversas disciplinas relacionadas à Ciência e Engenharia da Computação.
 
-\section{Sobre os Títulos e Capítulos}
+\section{Projeto}
 
-As demais subdivisões do texto (seções, subseções, etc.) são formatadas com o título alinhado sempre à esquerda, precedido da respectiva numeração. Para tanto, no \LaTeX, você deve utilizar os comandos \texttt{\char'134section},  \texttt{\char'134subsection} e  \texttt{\char'134subsubsection}.
+%As demais subdivisões do texto (seções, subseções, etc.) são formatadas com o título alinhado sempre à esquerda, precedido da respectiva numeração. Para tanto, no \LaTeX, você deve utilizar os comandos \texttt{\char'134section},  \texttt{\char'134subsection} e  \texttt{\char'134subsubsection}.
 
-São permitidas subdivisões até o 5º nível (onde o capítulo é o 1º. nível), porém no sumário inclui-se somente os títulos até o nível 3\footnote{O formato adotado pela ABNT prevê apenas três níveis (capítulo, seção e subseção).}. Assim, \texttt{\char'134subsubsection} não é aconselhado. 
+%São permitidas subdivisões até o 5º nível (onde o capítulo é o 1º. nível), porém no sumário inclui-se somente os títulos até o nível 3\footnote{O formato adotado pela ABNT prevê apenas três níveis (capítulo, seção e subseção).}. Assim, \texttt{\char'134subsubsection} não é aconselhado. 
 
+A proposta do projeto consta em, dada uma linguagem de programação escolhida pelo grupo dentre as pré-selecionadas pelo professor, desenvolver uma aplicação com duas implementações: uma puramente orientada a objetos e outra puramente funcional, contendo alguma forma de paralelismo. C++17 será a linguagem utilizada para ambas as versões.
 
-\subsection{Sobre o Sumário}
+\section{Sobre o jogo}
 
-Relaciona as principais divisões e seções do texto, na mesma ordem em que nele se sucedem, indicando, ainda, as respectivas páginas iniciais. O sumário deverá ser localizado imediatamente após as folhas de rosto, catalogação na publicação, dedicatórias e agradecimentos. Para maiores detalhes, ver a norma NBR-6027 da ABNT (1989b). 
+O projeto será um jogo de perguntas e respostas sobre diversos assuntos relacionados à CIência e Engenharia de Computação, aos moldes do "Show do Milhão" e "Quem quer ser um milionário?", com a objetivo de ajudar o estudante nas disciplinas da faculdade. O jogo contará com explicações sobre os conteúdos das perguntas e poderá ser feito a consulta das respostas dos outros jogadores. 
+
+\begin{comment}
+%\subsection{Sobre o Sumário}
+
+%Relaciona as principais divisões e seções do texto, na mesma ordem em que nele se sucedem, indicando, ainda, as respectivas páginas iniciais. O sumário deverá ser localizado imediatamente após as folhas de rosto, catalogação na publicação, dedicatórias e agradecimentos. Para maiores detalhes, ver a norma NBR-6027 da ABNT (1989b). 
 
 %\paragrafo
 
-Os títulos das subdivisões do texto são apresentados em fonte tamanho 12 pt, com as seguintes variações de estilo: 
+%Os títulos das subdivisões do texto são apresentados em fonte tamanho 12 pt, com as seguintes variações de estilo: 
 
-\begin{itemize}[leftmargin=3em] % [label={--}]
+%\begin{itemize}[leftmargin=3em] % [label={--}]
 
 \setlength{\itemindent}{1em}
 
@@ -536,5 +546,5 @@ Quando o local e a editora não puderem ser identificados, utilizam-se [S.l.:s.n
 
 
 
-
+\end{comment}
 \end{document}
