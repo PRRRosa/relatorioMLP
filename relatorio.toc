@@ -4,4 +4,5 @@
 \contentsline {chapter}{1~Introdu\IeC {\c c}\IeC {\~a}o}{3}{CHAPTER.1}
 \contentsline {section}{\numberline {1.1}Projeto}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Sobre o jogo}{3}{section.1.2}
+\contentsline {chapter}{2~C++17}{4}{CHAPTER.2}
 \contentsfinish 

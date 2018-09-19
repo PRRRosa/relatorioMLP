@@ -154,6 +154,20 @@ A proposta do projeto consta em, dada uma linguagem de programação escolhida p
 
 O projeto será um jogo de perguntas e respostas sobre diversos assuntos relacionados à Ciência e Engenharia de Computação, aos moldes dos programas "Show do Milhão" e "Quem quer ser um milionário?", com a objetivo de ajudar o estudante nas disciplinas da faculdade. O jogo contará com explicações sobre os conteúdos das perguntas e poderá ser feito a consulta das respostas dos outros jogadores. 
 
+\chapter{C++17}\label{c++}
+
+A linguagem C++ foi introduzida inicialmente em 1985 por Bjarne Stroustrup, herdando as características da linguagem C mas adicionando o conceito de Orientação a Objetos. Desde então, passou por diversas atualizações, estando hoje padronizada na versão ISO/IEC 14882:2017, informalmente conhecida como C++17.
+C++ possui 4 tipos de gerenciamento de memória:
+\begin{itemize}
+	\item Armazenamento de duração estática: são criados antes da chamada main() (salvo exceções) e destruídos na ordem reversa de criação após a saída de main().
+	\item Armazenamento de duração de thread: Similar ao armazenamento estático, porém o objeto é criado com a thread e destruído com o join da thread.
+	\item Armazenamento automático: Variáveis automáticas são criadas no ponto de declaração e destruídas na ordem reversa de criação de seu escopo. São alocadas automaticamente na pilha.
+	\item Armazenamento dinâmico: São criadas com uma chamada new e destruídas com uma chamada delete.
+\end{itemize}
+Sendo uma linguagem com suporte a Orientação a Objetos, possui classes, objetos, herança, polimorfismo, encapsulamento, sobrecarga, sobrescrita e tratamento de exceções.
+
+
+
 \begin{comment}
 %\subsection{Sobre o Sumário}
 
@@ -545,6 +559,6 @@ Quando a editora não puder ser indicada, deve-se indicar a expressão sine nomi
 Quando o local e a editora não puderem ser identificados, utilizam-se [S.l.:s.n].
 
 
-
 \end{comment}
+
 \end{document}
