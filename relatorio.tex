@@ -166,8 +166,18 @@ C++ possui 4 tipos de gerenciamento de memória:
 \end{itemize}
 Sendo uma linguagem com suporte a Orientação a Objetos, possui classes, objetos, herança, polimorfismo, encapsulamento, sobrecarga, sobrescrita e tratamento de exceções.
 
-
-
+\chapter{Implementação}\label{imp}
+\section{Orientação a Objetos}
+A implementação inicial inclui duas classes bases:
+\begin{itemize}
+	\item Jogador: Classe que será utilizada para criar informações sobre o jogador, como nome e pontuação.
+	\subitem Atributos: std::string nome, int pontuacao.
+	\subitem Métodos: Construtor, getPontuacao, setPontuacao(int pontuacao).
+	\item Pergunta: Classe que conterá uma pergunta com suas alternativas e resposta.
+	\subitem Atributos: std::string enunciado, std::string alternativas[4], int resposta.
+	\subitem Métodos: Construtor, showPergunta(): mostra a pergunta e as alternativas, responder(int alternativa): recebe a resposta do usuário, perguntar(): realiza a pergunta com os métodos showPergunta() e responder(int alternativa).
+\end{itemize}
+Além dessas classes, uma classe Database está incluída para gravar dados do programa, essencialmente as perguntas, e uma classe Main para execução do programa.
 \begin{comment}
 %\subsection{Sobre o Sumário}
 

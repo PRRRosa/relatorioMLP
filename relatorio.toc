@@ -5,4 +5,6 @@
 \contentsline {section}{\numberline {1.1}Projeto}{3}{section.1.1}
 \contentsline {section}{\numberline {1.2}Sobre o jogo}{3}{section.1.2}
 \contentsline {chapter}{2~C++17}{4}{CHAPTER.2}
+\contentsline {chapter}{3~Implementa\IeC {\c c}\IeC {\~a}o}{5}{CHAPTER.3}
+\contentsline {section}{\numberline {3.1}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{5}{section.3.1}
 \contentsfinish 

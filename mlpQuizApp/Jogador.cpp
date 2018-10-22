@@ -9,8 +9,17 @@ class Jogador
 {
 private:
     std::string nome;
+    int pontuacao;
 public:
     Jogador(std::string nome){
         this->nome = nome;
+    }
+    int getPontuacao()
+    {
+        return this->pontuacao;
+    }
+    void setPontuacao(int porntuacao)
+    {
+        this->pontuacao = porntuacao;
     }
 };
