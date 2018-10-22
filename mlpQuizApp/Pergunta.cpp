@@ -21,12 +21,29 @@ public:
         this->alternativas[3] = alternativa3;
         this->resposta = resposta;
     }
-    void showPergunta(){
+    void showPergunta()
+    {
         std::cout<< enunciado << std::endl;
         std::cout<< "1. " << alternativas[0] << std::endl;
         std::cout<< "2. " << alternativas[1] << std::endl;
         std::cout<< "3. " << alternativas[2] << std::endl;
         std::cout<< "4. " << alternativas[3] << std::endl<< std::endl;
+    }
+    void responder(int alternativa)
+    {
+        std::cout<<"Resposta: "<<resposta+1<<std::endl;
+        if(resposta+1 == alternativa){
+            std::cout<<"CORRETO"<<std::endl<<std::endl;
+        }else{
+            std::cout<<"ERRADO"<<std::endl<<std::endl;
+        }
+    }
+    void perguntar()
+    {
+        int alt;
+        showPergunta();
+        std::cin>>alt;
+        responder(alt);
     }
 
 };
