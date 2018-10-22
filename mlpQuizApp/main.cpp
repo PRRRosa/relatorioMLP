@@ -5,7 +5,7 @@ Database *database;
 
 int main() {
     database = new Database();
-    database->getPergunta(0).showPergunta();
-    database->getPergunta(1).showPergunta();
+    database->getPergunta(0).perguntar();
+    database->getPergunta(1).perguntar();
     return 0;
 }

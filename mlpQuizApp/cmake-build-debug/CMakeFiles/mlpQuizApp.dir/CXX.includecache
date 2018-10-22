@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/Users/paulorrr/CLionProjects/mlpQuizApp/Database.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
 string
 -
 Pergunta.cpp
-/Users/paulorrr/CLionProjects/mlpQuizApp/Pergunta.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp
 
-/Users/paulorrr/CLionProjects/mlpQuizApp/Pergunta.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp
 iostream
 -
 string
 -
 
-/Users/paulorrr/CLionProjects/mlpQuizApp/main.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp
 iostream
 -
 Database.cpp
-/Users/paulorrr/CLionProjects/mlpQuizApp/Database.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
 
