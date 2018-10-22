@@ -213,12 +213,12 @@ C++ possui 4 tipos de gerenciamento de memória:
 \section{Orientação a Objetos}
 A implementação inicial inclui duas classes bases:
 \begin{itemize}
-	\item Jogador: Classe que será utilizada para criar informações sobre o jogador, como nome e pontuação.
-	\subitem Atributos: std::string nome, int pontuacao.
-	\subitem Métodos: Construtor, getPontuacao, setPontuacao(int pontuacao).
-	\item Pergunta: Classe que conterá uma pergunta com suas alternativas e resposta.
-	\subitem Atributos: std::string enunciado, std::string alternativas[4], int resposta.
-	\subitem Métodos: Construtor, showPergunta(): mostra a pergunta e as alternativas, responder(int alternativa): recebe a resposta do usuário, perguntar(): realiza a pergunta com os métodos showPergunta() e responder(int alternativa).
+	\item Player: Classe que será utilizada para criar informações sobre o jogador, como nome e pontuação.
+	\subitem Atributos: std::string name, int score.
+	\subitem Métodos: Construtor, getScore, setScore(int score).
+	\item Question: Classe que conterá uma pergunta com suas alternativas e resposta.
+	\subitem Atributos: std::string enunciation, std::string alternatives[4], int answer.
+	\subitem Métodos: Construtor, showQuestion(): mostra a pergunta e as alternativas, respond(int alternative): recebe a resposta do usuário, askQuestion(): realiza a pergunta com os métodos showQuestion() e respond(int alternative).
 \end{itemize}
 Além dessas classes, uma classe Database está incluída para gravar dados do programa, essencialmente as perguntas, e uma classe Main para execução do programa.
 
