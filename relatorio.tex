@@ -151,12 +151,56 @@ Este trabalho tem como objetivo a implementação em C++ de um jogo pedagógico 
 A proposta do projeto consta em, dada uma linguagem de programação escolhida pelo grupo dentre as pré-selecionadas pelo professor, desenvolver uma aplicação com duas implementações: uma puramente orientada a objetos e outra puramente funcional, contendo alguma forma de paralelismo. C++17 será a linguagem utilizada para ambas as versões.
 
 \section{Sobre o jogo}
-
 O projeto será um jogo de perguntas e respostas sobre a disciplina de Modelos de Linguagem de Programação, aos moldes dos programas "Show do Milhão" e "Quem quer ser um milionário?", com a objetivo de ajudar o estudante na disciplina. O jogo contará com explicações sobre o conteúdo das perguntas e poderá ser feito a consulta das respostas dos outros jogadores. 
 
 \chapter{C++17}\label{c++}
 
+\section{Origem}
 A linguagem C++ foi introduzida inicialmente em 1985 por Bjarne Stroustrup, herdando as características da linguagem C mas adicionando o conceito de Orientação a Objetos. Desde então, passou por diversas atualizações, estando hoje padronizada na versão ISO/IEC 14882:2017, informalmente conhecida como C++17.
+
+\section{Programa}
+Programas em C++ podem conter valores, objetos, referências, funções, enumeradores, tipos, membros de classes, templates, especializações de template e namespaces. Essas entidades são criadas através de declarações, que associam a entidade com um nome e define suas propriedades. A declaração que define todas as propriedades para usar uma entidade é chamada de definição.
+
+Nomes encontrados em um programa são associados com a declaração em que aparecem. Eles somente são válidos no escopo em que foram declarados. Alguns nomes, dependendo da linkagem, podem referênciar entidades que aparecem em um escopo diferente.
+
+\section{Objetos}
+Programas em C++ criam, destroem, referenciam, acessam e manipulam objetos. Um objeto em C++ é uma região de armazenamento que possui:
+\begin{itemize}
+	\item tamanho(sizeof);
+	\item requisito de alinhamento(alignof);
+	\item duração de alocação(automática, estática, dinâmica, local);
+	\item duração de vida(baseada na alocação ou temporária);
+	\item tipo;
+	\item valor(pode ser indeterminado);
+	\item nome(opcional).
+\end{itemize}
+
+Objetos são criados com definições, expressões new, expressões throw, por manipulação de membros de uma union e onde objetos temporários são necessários.
+
+\section{Classes}
+Classes e estruturas são tipos definidos pelo usuário, usando especificadores de classe, que devem aparecer na sequencia a seguir.
+
+\begin{itemize}
+	\item Chave de classe - pode ser class ou struct, a única diferença entre elas é o acesso padrão, para estruturas é acesso a membro, e para classes é a membro da classe base.
+	\item Atributos - sequencia opcional de atributos, noreturn, por exemplo. Também pode ser incluido especificadores de alinhamento.
+	\item Nome - o identificador da classe. Opcionalmente acompanhado da palavra chave final. Caso o nome seja omitido, a classe é considerada anônima e não pode ser final.
+	\item Classes base -  lista opcional de classes pai e o modelo de herança que será usado para cada uma delas.
+	\item Membros - lista de membros, especificadores de acesso, declaração e definição de funções de instância, tipos e classes aninhados.
+\end{itemize}
+
+\section{Classes Abstratas}
+Classes abstratas são tipos que não podem ser instanciados, mas podem ser usados como classe base. Para criar uma, basta usar o especificador virtual. Classes como essas são usadas para representar conceitos gerais, por exemplo, Forma ou Animal, esses tipos serão usados como classe base para tipos concretos como Círculo ou Cachorro. 
+
+Não é possível usar tipos abstratos em parâmetros, tipos de retorno ou conversões. É possível usar esses tipos com ponteiros e referências.
+
+
+\section{Polimorfismo}
+Objetos de uma classe que declaram ou herdam pelo menos uma função virtual são considerados polimórficos. Dentro de cada objeto deste tipo, a implementação contém informações adicionais que são usadas por chamadas de funções virtuais e por métodos auxiliares como dynamic cast ou typeid.
+
+
+
+
+\section{Memória}
 C++ possui 4 tipos de gerenciamento de memória:
 \begin{itemize}
 	\item Armazenamento de duração estática: são criados antes da chamada main() (salvo exceções) e destruídos na ordem reversa de criação após a saída de main().
@@ -164,7 +208,6 @@ C++ possui 4 tipos de gerenciamento de memória:
 	\item Armazenamento automático: Variáveis automáticas são criadas no ponto de declaração e destruídas na ordem reversa de criação de seu escopo. São alocadas automaticamente na pilha.
 	\item Armazenamento dinâmico: São criadas com uma chamada new e destruídas com uma chamada delete.
 \end{itemize}
-Sendo uma linguagem com suporte a Orientação a Objetos, possui classes, objetos, herança, polimorfismo, encapsulamento, sobrecarga, sobrescrita e tratamento de exceções.
 
 \chapter{Implementação}\label{imp}
 \section{Orientação a Objetos}
@@ -178,6 +221,7 @@ A implementação inicial inclui duas classes bases:
 	\subitem Métodos: Construtor, showPergunta(): mostra a pergunta e as alternativas, responder(int alternativa): recebe a resposta do usuário, perguntar(): realiza a pergunta com os métodos showPergunta() e responder(int alternativa).
 \end{itemize}
 Além dessas classes, uma classe Database está incluída para gravar dados do programa, essencialmente as perguntas, e uma classe Main para execução do programa.
+
 \begin{comment}
 %\subsection{Sobre o Sumário}
 

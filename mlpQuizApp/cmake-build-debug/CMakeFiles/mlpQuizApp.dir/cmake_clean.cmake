@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/mlpQuizApp.dir/main.cpp.o"
-  "CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o"
   "CMakeFiles/mlpQuizApp.dir/Database.cpp.o"
-  "CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o"
+  "CMakeFiles/mlpQuizApp.dir/Player.cpp.o"
+  "CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
   "mlpQuizApp.pdb"
   "mlpQuizApp"
 )

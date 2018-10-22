@@ -3,4 +3,4 @@ project(mlpQuizApp)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(mlpQuizApp main.cpp Pergunta.cpp Database.cpp Jogador.cpp)
+add_executable(mlpQuizApp main.cpp Database.cpp Player.cpp Question.cpp)

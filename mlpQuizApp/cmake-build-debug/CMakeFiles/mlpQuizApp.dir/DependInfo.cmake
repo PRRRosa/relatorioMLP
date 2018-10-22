@@ -5,8 +5,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Database.cpp.o"
-  "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Jogador.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o"
-  "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o"
+  "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Player.cpp.o"
+  "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

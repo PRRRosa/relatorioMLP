@@ -83,10 +83,10 @@
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp">
 			<Option target="mlpQuizApp"/>
 		</Unit>
-		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Jogador.cpp">
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp">
 			<Option target="mlpQuizApp"/>
 		</Unit>
-		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp">
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp">
 			<Option target="mlpQuizApp"/>
 		</Unit>
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp">

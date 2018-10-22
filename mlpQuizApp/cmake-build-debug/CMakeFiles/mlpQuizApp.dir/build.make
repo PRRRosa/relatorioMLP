@@ -70,22 +70,9 @@ CMakeFiles/mlpQuizApp.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/main.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp -o CMakeFiles/mlpQuizApp.dir/main.cpp.s
 
-CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o: CMakeFiles/mlpQuizApp.dir/flags.make
-CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o: ../Pergunta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o -c /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp
-
-CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp > CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.i
-
-CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Pergunta.cpp -o CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.s
-
 CMakeFiles/mlpQuizApp.dir/Database.cpp.o: CMakeFiles/mlpQuizApp.dir/flags.make
 CMakeFiles/mlpQuizApp.dir/Database.cpp.o: ../Database.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mlpQuizApp.dir/Database.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/mlpQuizApp.dir/Database.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mlpQuizApp.dir/Database.cpp.o -c /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
 
 CMakeFiles/mlpQuizApp.dir/Database.cpp.i: cmake_force
@@ -96,33 +83,46 @@ CMakeFiles/mlpQuizApp.dir/Database.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/Database.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp -o CMakeFiles/mlpQuizApp.dir/Database.cpp.s
 
-CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o: CMakeFiles/mlpQuizApp.dir/flags.make
-CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o: ../Jogador.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o -c /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Jogador.cpp
+CMakeFiles/mlpQuizApp.dir/Player.cpp.o: CMakeFiles/mlpQuizApp.dir/flags.make
+CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Player.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/mlpQuizApp.dir/Player.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mlpQuizApp.dir/Player.cpp.o -c /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
 
-CMakeFiles/mlpQuizApp.dir/Jogador.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mlpQuizApp.dir/Jogador.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Jogador.cpp > CMakeFiles/mlpQuizApp.dir/Jogador.cpp.i
+CMakeFiles/mlpQuizApp.dir/Player.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mlpQuizApp.dir/Player.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp > CMakeFiles/mlpQuizApp.dir/Player.cpp.i
 
-CMakeFiles/mlpQuizApp.dir/Jogador.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/Jogador.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Jogador.cpp -o CMakeFiles/mlpQuizApp.dir/Jogador.cpp.s
+CMakeFiles/mlpQuizApp.dir/Player.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/Player.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp -o CMakeFiles/mlpQuizApp.dir/Player.cpp.s
+
+CMakeFiles/mlpQuizApp.dir/Question.cpp.o: CMakeFiles/mlpQuizApp.dir/flags.make
+CMakeFiles/mlpQuizApp.dir/Question.cpp.o: ../Question.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mlpQuizApp.dir/Question.cpp.o -c /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
+
+CMakeFiles/mlpQuizApp.dir/Question.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mlpQuizApp.dir/Question.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp > CMakeFiles/mlpQuizApp.dir/Question.cpp.i
+
+CMakeFiles/mlpQuizApp.dir/Question.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mlpQuizApp.dir/Question.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp -o CMakeFiles/mlpQuizApp.dir/Question.cpp.s
 
 # Object files for target mlpQuizApp
 mlpQuizApp_OBJECTS = \
 "CMakeFiles/mlpQuizApp.dir/main.cpp.o" \
-"CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o" \
 "CMakeFiles/mlpQuizApp.dir/Database.cpp.o" \
-"CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o"
+"CMakeFiles/mlpQuizApp.dir/Player.cpp.o" \
+"CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
 
 # External object files for target mlpQuizApp
 mlpQuizApp_EXTERNAL_OBJECTS =
 
 mlpQuizApp: CMakeFiles/mlpQuizApp.dir/main.cpp.o
-mlpQuizApp: CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o
 mlpQuizApp: CMakeFiles/mlpQuizApp.dir/Database.cpp.o
-mlpQuizApp: CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o
+mlpQuizApp: CMakeFiles/mlpQuizApp.dir/Player.cpp.o
+mlpQuizApp: CMakeFiles/mlpQuizApp.dir/Question.cpp.o
 mlpQuizApp: CMakeFiles/mlpQuizApp.dir/build.make
 mlpQuizApp: CMakeFiles/mlpQuizApp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable mlpQuizApp"

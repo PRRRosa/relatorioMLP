@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.23)  22 OCT 2018 15:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2018.9.23)  22 OCT 2018 18:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -70,9 +70,9 @@ Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 \l@brazilian = a dialect from \language\l@portuges 
 Package babel Info: Making " an active character on input line 145.
 ))
-(./brazilian.babel) (./english.babel)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/lastpage/lastpage.sty
-Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
+(./brazilian.babel) (./english.babel) (./lastpage.sty
+Package: lastpage 1994/06/25 v0.1b LaTeX2e package for refs to last page number
+ (JPG)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/indentfirst.sty
 Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
@@ -687,11 +687,7 @@ LaTeX Font Info:    ... okay on input line 109.
 LaTeX Font Info:    Try loading font information for T1+ptm on input line 109.
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-Package lastpage Info: Please have a look at the pageslts package at
-(lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 109.
- (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+) (/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count280
 \scratchdimen=\dimen164
@@ -876,6 +872,55 @@ text indent calculated (toc, 0): 18.0pt
 number indent calculated (toc, 0): 0.0pt
 text noindent (toc, 0): 21.0pt
 number noindent (toc, 0): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
+number indent by \l@... (toc, 1):  18.0pt
+text indent by \l@... (toc, 1):  27.60004pt
+number indent by parent (toc, 1):  18.0pt
+text indent calculated (toc, 1): 21.0pt
+number indent calculated (toc, 1): 18.0pt
+text noindent (toc, 1): 21.0pt
+number noindent (toc, 1): 0.0pt
 number indent by \l@... (toc, 0):  0.0pt
 text indent by \l@... (toc, 0):  18.0pt
 number indent by parent (toc, 0):  0.0pt
@@ -909,73 +954,101 @@ Package babel Info: Redefining portuges shorthand "|
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 153.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 156.
  [3
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 162.
+(babel)             in language  on input line 156.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 158.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 161.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 166.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 169.
 
  (/usr/local/texlive/2018/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 169.
 
 Underfull \hbox (badness 10000) has occurred while \output is active
 \T1/ptm/m/n/10.95 4
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 169.
+(babel)             in language  on input line 176.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 169.
+(babel)             in language  on input line 176.
 [4
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 169.
+(babel)             in language  on input line 180.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 170.
- 
-AED: lastpage setting LastPage
+(babel)             in language  on input line 191.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 574.
+(babel)             in language  on input line 197.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 574.
-[5
+(babel)             in language  on input line 199.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 199.
+ [5]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 203.
+
+Underfull \hbox (badness 10000) has occurred while \output is active
+\T1/ptm/m/n/10.95 6
+ []
+
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 212.
+[6]
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 212.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 213.
+ AED: lastpage setting LastPage
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 618.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 618.
+ [7
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 574.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 574.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 574.
+(babel)             in language  on input line 618.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 618.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 618.
  (./relatorio.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 574.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 574.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 618.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 618.
 Package rerunfilecheck Info: File `relatorio.out' has not changed.
-(rerunfilecheck)             Checksum: 25CAEE0090806E9C10BDBFE21C6BF412;852.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 574.
+(rerunfilecheck)             Checksum: 5829BF7D7F05C1310086783DB0F64829;1722.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 618.
  ) 
 Here is how much of TeX's memory you used:
- 21844 strings out of 492649
- 365045 string characters out of 6129622
- 455891 words of memory out of 5000000
- 25495 multiletter control sequences out of 15000+600000
+ 21842 strings out of 492649
+ 364781 string characters out of 6129622
+ 456243 words of memory out of 5000000
+ 25485 multiletter control sequences out of 15000+600000
  552415 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,6n,45p,10365b,396s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,6n,45p,10365b,441s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
 xlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/local/texlive/2018
 /texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on relatorio.pdf (5 pages, 46589 bytes).
+Output written on relatorio.pdf (7 pages, 51540 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 70 compressed objects within 1 object stream
- 14 named destinations out of 1000 (max. 500000)
- 57 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 128 PDF objects out of 1000 (max. 8388607)
+ 114 compressed objects within 2 object streams
+ 23 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

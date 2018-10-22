@@ -150,59 +150,59 @@ Database.cpp.s:
 	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Database.cpp.s
 .PHONY : Database.cpp.s
 
-Jogador.o: Jogador.cpp.o
+Player.o: Player.cpp.o
 
-.PHONY : Jogador.o
-
-# target to build an object file
-Jogador.cpp.o:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Jogador.cpp.o
-.PHONY : Jogador.cpp.o
-
-Jogador.i: Jogador.cpp.i
-
-.PHONY : Jogador.i
-
-# target to preprocess a source file
-Jogador.cpp.i:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Jogador.cpp.i
-.PHONY : Jogador.cpp.i
-
-Jogador.s: Jogador.cpp.s
-
-.PHONY : Jogador.s
-
-# target to generate assembly for a file
-Jogador.cpp.s:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Jogador.cpp.s
-.PHONY : Jogador.cpp.s
-
-Pergunta.o: Pergunta.cpp.o
-
-.PHONY : Pergunta.o
+.PHONY : Player.o
 
 # target to build an object file
-Pergunta.cpp.o:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.o
-.PHONY : Pergunta.cpp.o
+Player.cpp.o:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Player.cpp.o
+.PHONY : Player.cpp.o
 
-Pergunta.i: Pergunta.cpp.i
+Player.i: Player.cpp.i
 
-.PHONY : Pergunta.i
+.PHONY : Player.i
 
 # target to preprocess a source file
-Pergunta.cpp.i:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.i
-.PHONY : Pergunta.cpp.i
+Player.cpp.i:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Player.cpp.i
+.PHONY : Player.cpp.i
 
-Pergunta.s: Pergunta.cpp.s
+Player.s: Player.cpp.s
 
-.PHONY : Pergunta.s
+.PHONY : Player.s
 
 # target to generate assembly for a file
-Pergunta.cpp.s:
-	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Pergunta.cpp.s
-.PHONY : Pergunta.cpp.s
+Player.cpp.s:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Player.cpp.s
+.PHONY : Player.cpp.s
+
+Question.o: Question.cpp.o
+
+.PHONY : Question.o
+
+# target to build an object file
+Question.cpp.o:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Question.cpp.o
+.PHONY : Question.cpp.o
+
+Question.i: Question.cpp.i
+
+.PHONY : Question.i
+
+# target to preprocess a source file
+Question.cpp.i:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Question.cpp.i
+.PHONY : Question.cpp.i
+
+Question.s: Question.cpp.s
+
+.PHONY : Question.s
+
+# target to generate assembly for a file
+Question.cpp.s:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Question.cpp.s
+.PHONY : Question.cpp.s
 
 main.o: main.cpp.o
 
@@ -243,12 +243,12 @@ help:
 	@echo "... Database.o"
 	@echo "... Database.i"
 	@echo "... Database.s"
-	@echo "... Jogador.o"
-	@echo "... Jogador.i"
-	@echo "... Jogador.s"
-	@echo "... Pergunta.o"
-	@echo "... Pergunta.i"
-	@echo "... Pergunta.s"
+	@echo "... Player.o"
+	@echo "... Player.i"
+	@echo "... Player.s"
+	@echo "... Question.o"
+	@echo "... Question.i"
+	@echo "... Question.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
