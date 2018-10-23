@@ -14,4 +14,8 @@
 \contentsline {section}{\numberline {2.7}Mem\IeC {\'o}ria}{6}{section.2.7}
 \contentsline {chapter}{3~Implementa\IeC {\c c}\IeC {\~a}o}{7}{CHAPTER.3}
 \contentsline {section}{\numberline {3.1}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{7}{section.3.1}
+\contentsline {section}{\numberline {3.2}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o OO}{7}{section.3.2}
+\contentsline {section}{\numberline {3.3}Funcional}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o Funcional}{9}{section.3.4}
+\contentsline {section}{\numberline {3.5}Refer\IeC {\^e}ncias}{10}{section.3.5}
 \contentsfinish 
