@@ -15,8 +15,6 @@
 % (a A seguir podem ser importados os pacotes necessários para o documento, de acordo 
 % com a necessidade)
 %
-\usepackage{url}
-\usepackage{hyperref}
 \usepackage{verbatim}
 \usepackage[brazilian]{babel}	    % para texto escrito em pt-br
 \usepackage[utf8]{inputenc}         % pacote para acentuação
@@ -328,20 +326,6 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	\item Recursos de processamento paralelo
 		\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
 		\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
-	
-\end{itemize}
-
-\section{Referências}
-\begin{itemize}[leftmargin=3em]
-	
-	\setlength{\itemindent}{1em}
-	
-	\item\url{https://en.cppreference.com/w/cpp/language/object}: Objects
-	
-	\item\url{https://en.cppreference.com/w/cpp/language/class}: Classes
-	
-	\item\url{https://en.cppreference.com/w/cpp/language/objectPolymorphic_objects}: Polymorphic Objects
-	\item\url{https://en.cppreference.com/w/cpp/language/abstract_class}: Abstract Classes
 	
 \end{itemize}
 
