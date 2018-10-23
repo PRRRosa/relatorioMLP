@@ -40,6 +40,19 @@
 %\usepackage{booktabs}
 %\usepackage{tabularx}
 %\usepackage[breaklinks]{hyperref}
+\usepackage{listings}
+\usepackage{xcolor} % for setting colors
+
+% set the default code style
+\lstset{
+	frame=tb, % draw a frame at the top and bottom of the code block
+	tabsize=4, % tab space width
+	showstringspaces=false, % don't mark spaces in strings
+	numbers=left, % display line numbers on the left
+	commentstyle=\color{green}, % comment color
+	keywordstyle=\color{blue}, % keyword color
+	stringstyle=\color{red} % string color
+}
 
 \usepackage[alf,abnt-emphasize=bf]{abntex2cite}	% pacote para usar citações abnt
 
@@ -221,6 +234,100 @@ A implementação inicial inclui duas classes bases:
 	\subitem Métodos: Construtor, showQuestion(): mostra a pergunta e as alternativas, respond(int alternative): recebe a resposta do usuário, askQuestion(): realiza a pergunta com os métodos showQuestion() e respond(int alternative).
 \end{itemize}
 Além dessas classes, uma classe Database está incluída para gravar dados do programa, essencialmente as perguntas, e uma classe Main para execução do programa.
+
+
+
+\section{Recursos utilizados para a implementação OO}
+\begin{itemize}
+	\item Recursos mínimos sugeridos
+	\subitem 1. Especificar e utilizar classes (utilitárias ou para representar as estruturas de dados utilizadas pelo programa).
+	\begin{lstlisting}[language=C++, caption={Exemplo de classe utilizada no programa}]
+	#include <iostream>
+	#include <string>
+	
+	class Player
+	{
+	private:
+	std::string name;
+	int score;
+	public:
+	Player(std::string name){
+	this->name = name;
+	}
+	int getScore()
+	{
+	return this->score;
+	}
+	void setScore(int score)
+	{
+	this->score = score;
+	}
+	};
+	\end{lstlisting}
+	
+	\subitem 2. Fazer uso de encapsulamento e proteção dos atributos, com os devidos métodos de manipulação (setters/getters) ou propriedades de acesso, em especial com validação dos valores (parâmetros) TODO para que estejam dentro do esperado ou gerem exceções caso contrário TODO.
+	
+	Observando o Listing 3.1 o atributo  \textbf{score} é protegido pelos métodos \textbf{getScore} e \textbf{setScore}, impossibilitando algum desenvolvedor de ter acesso direto à esta propriedade do objeto \textbf{Player}. Isso centraliza a leitura e a escrita desse atributo, resultando em uma melhor organização do código.
+	
+	\subitem 3. Especificação e uso de construtores-padrão para a inicialização dos atributos e, sempre que possível, de construtores alternativos.
+	
+	O listing 3.1 também demonstra o uso de um construtor não padrão que necessita somente do atributo \textbf{name} que tem especificação de tipo, garantindo então a tipagem correta deste parametro.
+	
+	\subitem 4. Especificação e uso de destrutores (ou métodos de finalização), quando necessário TODO.
+	
+	\subitem 5. Organizar o código em espaços de nome diferenciados, conforme a função ou estrutura de cada classe ou módulo de programa TODO.
+	
+	\subitem 6. Usar mecanismo de herança, em especial com a especificação de pelo menos três níveis de hierarquia, sendo pelo menos um deles correspondente a uma classe abstrata, mais genérica, a ser implementada nas classes-filhas TODO.
+	
+	\subitem 7. Utilizar polimorfismo por inclusão (variável ou coleção genérica manipulando entidades de classes filhas, chamando métodos ou funções específicas correspondentes) TODO.
+	
+	\subitem 8. Usar polimorfismo paramétrico
+	através da especificação de \textit{algoritmo} (método ou função genérico) utilizando o recurso oferecido pela linguagem (i.e., generics, templates ou similar)
+	e da especificação de \textit{estrutura de dados} genérica utilizando o recurso oferecido pela linguagem TODO.
+	
+	\subitem 9. Usar polimorfismo por sobrecarga (vale construtores alternativos) TODO.
+	
+	\subitem 10. Especificar e usar delegates TODO.
+	
+	\item Recursos extras
+	\subitem Exemplo de recurso extra
+	
+	\item Recursos de processamento paralelo
+	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
+	\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
+
+\end{itemize}
+
+\section{Funcional}
+
+\section{Recursos utilizados para a implementação Funcional}
+\begin{itemize}
+	\item Recursos mínimos sugeridos
+	
+	\subitem 1. Priorizar o uso de elementos imutáveis e funções puras (por exemplo, sempre precisar manipular listas, criar uma nova e não modificar a original, seja por recursão ou através de funções de ordem maior). TODO
+	
+	\subitem 2. Especificar e usar funções não nomeadas (ou lambda) TODO.
+	
+	\subitem 3. Especificar e usar funções que usem currying TODO.
+	
+	\subitem 4. Especificar funções que utilizem pattern matching ao máximo, na sua definição TODO.
+	
+	\subitem 5. Especificar e usar funções de ordem superior (maior) criadas pelo programador TODO.
+	
+	\subitem 6. Usar funções de ordem maior prontas (p.ex., map, reduce, foldr/foldl ou similares) TODO.
+	
+	\subitem 7. Especificar e usar funções como elementos de 1ª ordem TODO.
+	
+	\subitem 8.Usar recursão como mecanismo de iteração (pelo menos em funções de ordem superior que manipulem listas) TODO.
+	
+	\item Recursos extras
+	\subitem Exemplo de recurso extra
+	
+	\item Recursos de processamento paralelo
+		\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
+		\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
+	
+\end{itemize}
 
 \begin{comment}
 %\subsection{Sobre o Sumário}
