@@ -28,18 +28,50 @@ Database::Database()
             };
             _questions.push_back(new Question(description, alternatives, 3));
         }
-        
-        // questions.push_back(new Question("Qual desses algoritmos de coleta de lixo diminui a fragmentação externa e "
-        //                             "divide o monte em regiões?", "Contador de referências", "Pare e copie", "Marcar e varrer",
-        //                             "Coleção conservadora", 1));
-        // questions.push_back(new Question("Qual desses algoritmos de coleta de lixo libera a memória logo que ela deixa de ser "
-        //                             "usada ou referenciada?", "Contador de referências", "Coleção conservadora", "Pare e copie", "Marcar e varrer", 0));
-        // questions.push_back(new Question("Dada uma hierarquia de classes em que uma classe C herda de B, e B herda de A, "
-        //                                  "dada uma instância de C que vai ser destruída, em qual ordem os destrutores são chamados?"
-        //                                  , "C,B,A", "B,C,A", "A,B,C", "C,A,B", 2));
-        // questions.push_back(new Question("Se dynamic_cast falhar, que valor é retornado?", "void", "null", "ponteiro void", "ponteiro null", 3));
 
-        //questions.push_back(new Question(""));
+        {
+            auto description = "Qual desses algoritmos de coleta de lixo diminui a fragmentação externa e divide o monte em regiões?";
+            std::vector<std::string> alternatives {
+                "Contador de referências",
+                "Pare e copie", 
+                "Marcar e varrer",
+                "Coleção conservadora"
+            };
+            _questions.push_back(new Question(description, alternatives, 1));
+        }
+
+        {
+            auto description = "Qual desses algoritmos de coleta de lixo libera a memória logo que ela deixa de ser usada ou referenciada?";
+            std::vector<std::string> alternatives {
+                "Contador de referências",
+                "Coleção conservadora",
+                "Pare e copie",
+                "Marcar e varrer"
+            };
+            _questions.push_back(new Question(description, alternatives, 0));
+        }
+
+        {
+            auto description = "Dada uma hierarquia de classes em que uma classe C herda de B, e B herda de A, dada uma instância de C que vai ser destruída, em qual ordem os destrutores são chamados?";
+            std::vector<std::string> alternatives {
+                "C,B,A",
+                "B,C,A",
+                "A,B,C",
+                "C,A,B"
+            };
+            _questions.push_back(new Question(description, alternatives, 2));
+        }
+
+        {
+            auto description = "Se dynamic_cast falhar, que valor é retornado?";
+            std::vector<std::string> alternatives {
+                "void", "null",
+                "ponteiro void",
+                "ponteiro null"
+            };
+            _questions.push_back(new Question(description, alternatives, 3));
+        }
+
         _questions.push_back(new Question());
 
 }
