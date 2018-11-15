@@ -11,7 +11,14 @@ int main() {
     database->print();
     while(cont == 's')
     {
-        database->getQuestion(rand()%database->getQuestionsSize()).askQuestion();
+        auto q = database->getQuestion(rand()%database->getQuestionsSize());
+        std::cout << q;
+        
+        int answer;
+        std::cin>>answer;
+        std::cout << (q.checkAnswer(answer) ? "Correto!" : "Errou!") << std::endl;
+        // respond(alt);
+
         std::cout<<"Quer continuar s/n?"<<std::endl;
         std::cin>>cont;
     }

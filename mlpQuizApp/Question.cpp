@@ -9,15 +9,15 @@ Question::Question() {
 };
 
 Question::Question(std::string description, std::vector<std::string> alternatives, int answer) {
-    this->_description = desctiption;
+    this->_description = description;
     this->_alternatives = alternatives;
     this->_answer = answer; 
 }
 
 std::ostream &operator<< (std::ostream &output, const Question &question) {
-    output << std::endl << this->_description << std::endl;
-    for (int i=0; i < this->_alternatives.size(); i++)
-        output << i << ". " <<  this->_alternatives[i] << std::endl << std::endl;
+    output << std::endl << question.getDescription() << std::endl;
+    for (int i=0; i < question.getAlternatives().size(); i++)
+        output << i << ". " <<  question.getAlternatives()[i] << std::endl << std::endl;
     return output;
 }
 
@@ -29,11 +29,4 @@ std::ostream &operator<< (std::ostream &output, const Question &question) {
 //         }else{
 //             std::cout<<"ERRADO"<<std::endl<<std::endl;
 //         }
-//     }
-//     void askQuestion()
-//     {
-//         int alt;
-//         showQuestion();
-//         std::cin>>alt;
-//         respond(alt);
 //     }

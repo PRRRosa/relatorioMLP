@@ -2,17 +2,19 @@
 // Created by Paulo Ricardo Ramos da Rosa on 15/11/18.
 //
 
-
+#include <string>
 #include <vector>
-#import "Question.cpp"
+#include "Question.h"
 #include "Object.h"
 
 class Database : public Object
 {
 private:
-    std::vector <Question*> questions;
+    std::vector<Question*> _questions;
 public:
-    void print();
+    void print() {
+    	std::cout << "Hello.";
+    }
     Database();
     ~Database();
     Question getQuestion(int index);
