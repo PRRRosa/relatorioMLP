@@ -3,14 +3,15 @@
 //
 #include "Database.h"
 #include <string>
-<<<<<<< Updated upstream
+#import "iostream"
 #include <vector>
-=======
 
->>>>>>> Stashed changes
 #import "Question.cpp"
 
 
+void Database::print() {
+  std::cout << "Hello World" << std::endl;
+}
 Database::Database()
 {
 

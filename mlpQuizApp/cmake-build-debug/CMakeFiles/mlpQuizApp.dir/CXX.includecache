@@ -11,6 +11,8 @@ Database.h
 /Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.h
 string
 -
+iostream
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/iostream
 vector
 -
 Question.cpp
