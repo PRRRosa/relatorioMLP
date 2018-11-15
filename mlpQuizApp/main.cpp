@@ -1,11 +1,19 @@
 #include <iostream>
-#import "Database.cpp"
+#include <ctime>
+#import "Database.h"
 
 Database *database;
+char cont = 's';
 
 int main() {
+    srand(time(NULL));
     database = new Database();
-    database->getQuestion(0).askQuestion();
-    database->getQuestion(1).askQuestion();
+    while(cont == 's')
+    {
+        database->getQuestion(rand()%database->getQuestionsSize()).askQuestion();
+        std::cout<<"Quer continuar s/n?"<<std::endl;
+        std::cin>>cont;
+    }
+
     return 0;
 }

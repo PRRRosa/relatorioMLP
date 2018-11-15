@@ -3,12 +3,14 @@
 
 CMakeFiles/mlpQuizApp.dir/Database.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
 CMakeFiles/mlpQuizApp.dir/Question.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
 CMakeFiles/mlpQuizApp.dir/main.cpp.o
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp

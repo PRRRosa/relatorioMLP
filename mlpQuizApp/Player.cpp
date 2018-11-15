@@ -1,26 +1,26 @@
 //
 // Created by Paulo Ricardo Ramos da Rosa on 21/10/18.
 //
-
+#include "Player.h"
 #include <iostream>
 #include <string>
 
-class Player
+
+Player::Player(std::string name)
 {
-private:
-    std::string name;
-    int score;
-public:
-    Player(std::string name){
-        this->name = name;
-    }
-    int getScore()
-    {
-        return this->score;
-    }
-    void setScore(int score)
-    {
-        this->score = score;
-    }
-};
+    this->name = name;
+}
+Player::~Player()
+{
+
+}
+int Player::getScore()
+{
+    return this->score;
+}
+void Player::setScore(int score)
+{
+    this->score = score;
+}
+
 

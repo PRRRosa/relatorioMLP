@@ -83,7 +83,13 @@
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp">
 			<Option target="mlpQuizApp"/>
 		</Unit>
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h">
 			<Option target="mlpQuizApp"/>
 		</Unit>
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp">
