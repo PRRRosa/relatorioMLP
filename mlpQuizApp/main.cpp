@@ -8,6 +8,7 @@ char cont = 's';
 int main() {
     srand(time(NULL));
     database = new Database();
+    database->print();
     while(cont == 's')
     {
         database->getQuestion(rand()%database->getQuestionsSize()).askQuestion();

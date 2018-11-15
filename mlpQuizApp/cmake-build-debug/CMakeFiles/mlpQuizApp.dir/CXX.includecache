@@ -6,39 +6,69 @@
 
 #IncludeRegexTransform: 
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.cpp
 Database.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.h
 string
 -
 vector
 -
 Question.cpp
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.h
 vector
 -
 Question.cpp
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp
+Object.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Object.h
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
-Player.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Object.h
+
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Player.cpp
+>>>>>>> Stashed changes
+iostream
+-
+string
+-
+-
+<<<<<<< Updated upstream
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+=======
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp
+>>>>>>> Stashed changes
 iostream
 -
 string
 -
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
-iostream
 -
-string
--
-
+<<<<<<< Updated upstream
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
 iostream
 -
 string
 -
+=======
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/main.cpp
+iostream
+-
+Database.cpp
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.cpp
+>>>>>>> Stashed changes
+-
+
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp
+iostream
+-
+string
+-
+
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/main.cpp
+iostream
+-
+ctime
+-
+Database.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.h
 

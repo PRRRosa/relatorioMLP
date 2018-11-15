@@ -5,8 +5,9 @@
 
 #include <vector>
 #import "Question.cpp"
+#include "Object.h"
 
-class Database
+class Database : public Object
 {
 private:
     std::vector <Question*> questions;
