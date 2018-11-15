@@ -72,13 +72,25 @@ Database::Database()
             _questions.push_back(new Question(description, alternatives, 3));
         }
 
+        {
+        auto description = "Como evitar ClassCastExceptions?";
+        std::vector<std::string> alternatives {
+                "Usando instanceOf", "Checando com is-a",
+                "Usando <- com check",
+                "Checando o tipo de conversão"
+        };
+        _questions.push_back(new Question(description, alternatives, 0));
+    }
+
+
         _questions.push_back(new Question());
+
 
 }
 
 Database::~Database()
 {
-
+    delete(&_questions);
 }
 
 Question Database::getQuestion(int index)

@@ -8,6 +8,7 @@ void SignUpManager::start() {
     std::string name;
     std::cout << "Escolha um nome de usuário: ";
     std::cin >> name;
-    std::cout << std::endl << "Usuário cadastrado." << std::endl;
-    this->_delegate(name);
+
+    auto player = Player(name);
+    this->_delegate(player);
 }

@@ -6,21 +6,19 @@
 #include <string>
 
 
-Player::Player(std::string name)
-{
-    this->name = name;
+Player::Player(std::string name):Person(name) {
+    this->_score = 0;
 }
-Player::~Player()
-{
 
+Player::~Player() {}
+
+void Player::setScore(int score) {
+	if (score < 0) { return; }
+    this->_score = score;
 }
-int Player::getScore()
-{
-    return this->score;
-}
-void Player::setScore(int score)
-{
-    this->score = score;
+
+void Player::print() {
+    std::cout<< "Meu nome é "<< this->getName() << " e minha pontuação é " << this->getScore() << std::endl;
 }
 
 

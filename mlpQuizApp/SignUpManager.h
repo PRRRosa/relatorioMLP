@@ -3,8 +3,9 @@
 
 #include <iostream>
 #include <string>
+#include "Player.h"
 
-typedef void SignUpManagerDelegate(std::string);
+typedef void SignUpManagerDelegate(Player);
 
 class SignUpManager {
   public:
