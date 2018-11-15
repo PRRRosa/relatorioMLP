@@ -150,6 +150,33 @@ Database.cpp.s:
 	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Database.cpp.s
 .PHONY : Database.cpp.s
 
+Person.o: Person.cpp.o
+
+.PHONY : Person.o
+
+# target to build an object file
+Person.cpp.o:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Person.cpp.o
+.PHONY : Person.cpp.o
+
+Person.i: Person.cpp.i
+
+.PHONY : Person.i
+
+# target to preprocess a source file
+Person.cpp.i:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Person.cpp.i
+.PHONY : Person.cpp.i
+
+Person.s: Person.cpp.s
+
+.PHONY : Person.s
+
+# target to generate assembly for a file
+Person.cpp.s:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Person.cpp.s
+.PHONY : Person.cpp.s
+
 Player.o: Player.cpp.o
 
 .PHONY : Player.o
@@ -243,6 +270,9 @@ help:
 	@echo "... Database.o"
 	@echo "... Database.i"
 	@echo "... Database.s"
+	@echo "... Person.o"
+	@echo "... Person.i"
+	@echo "... Person.s"
 	@echo "... Player.o"
 	@echo "... Player.i"
 	@echo "... Player.s"

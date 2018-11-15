@@ -2,10 +2,12 @@
 #include <ctime>
 #import "Database.h"
 
+
 Database *database;
 char cont = 's';
 
 int main() {
+
     srand(time(NULL));
     database = new Database();
     while(cont == 's')

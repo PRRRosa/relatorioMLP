@@ -5,6 +5,10 @@ CMakeFiles/mlpQuizApp.dir/Database.cpp.o: ../Database.cpp
 CMakeFiles/mlpQuizApp.dir/Database.cpp.o: ../Database.h
 CMakeFiles/mlpQuizApp.dir/Database.cpp.o: ../Question.cpp
 
+CMakeFiles/mlpQuizApp.dir/Person.cpp.o: ../Person.cpp
+CMakeFiles/mlpQuizApp.dir/Person.cpp.o: ../Person.h
+
+CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Person.h
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Player.h
 

@@ -6,9 +6,9 @@
 #include <string>
 
 
-Player::Player(std::string name)
+Player::Player(std::string name):Person(name)
 {
-    this->name = name;
+    score = 0;
 }
 Player::~Player()
 {
@@ -21,6 +21,10 @@ int Player::getScore()
 void Player::setScore(int score)
 {
     this->score = score;
+}
+void Player::printName()
+{
+    std::cout<< "Meu nome é "<< getName() << " e minha pontuação é " << this->score << std::endl;
 }
 
 

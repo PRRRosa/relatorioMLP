@@ -26,13 +26,14 @@ Database::Database()
                                          , "C,B,A", "B,C,A", "A,B,C", "C,A,B", 2));
         questions.push_back(new Question("Se dynamic_cast falhar, que valor é retornado?", "void", "null", "ponteiro void", "ponteiro null", 3));
 
-        //questions.push_back(new Question(""));
+        questions.push_back(new Question("Como evitar ClassCastExceptions?", "Usando instanceOf", "Checando com is-a", "Usando <- com check", "Checando o tipo de conversão", 0));
+
 
 }
 
 Database::~Database()
 {
-
+    delete(&questions);
 }
 
 Question Database::getQuestion(int index)

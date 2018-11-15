@@ -6,21 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
-Database.h
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
-string
--
 vector
 -
 Question.cpp
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
-vector
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.cpp
+Person.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
+string
 -
-Question.cpp
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
 
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
 Player.h
@@ -31,6 +29,8 @@ string
 -
 
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+Person.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
 iostream
 -
 string
@@ -41,4 +41,12 @@ iostream
 -
 string
 -
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp
+iostream
+-
+ctime
+-
+Database.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
 

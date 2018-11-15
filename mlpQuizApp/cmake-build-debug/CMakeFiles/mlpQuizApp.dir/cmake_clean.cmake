@@ -3,6 +3,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/mlpQuizApp.dir/Database.cpp.o"
   "CMakeFiles/mlpQuizApp.dir/Player.cpp.o"
   "CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
+  "CMakeFiles/mlpQuizApp.dir/Person.cpp.o"
   "mlpQuizApp.pdb"
   "mlpQuizApp"
 )
