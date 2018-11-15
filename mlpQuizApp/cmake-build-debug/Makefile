@@ -231,6 +231,33 @@ Question.cpp.s:
 	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/Question.cpp.s
 .PHONY : Question.cpp.s
 
+SignUpManager.o: SignUpManager.cpp.o
+
+.PHONY : SignUpManager.o
+
+# target to build an object file
+SignUpManager.cpp.o:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/SignUpManager.cpp.o
+.PHONY : SignUpManager.cpp.o
+
+SignUpManager.i: SignUpManager.cpp.i
+
+.PHONY : SignUpManager.i
+
+# target to preprocess a source file
+SignUpManager.cpp.i:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/SignUpManager.cpp.i
+.PHONY : SignUpManager.cpp.i
+
+SignUpManager.s: SignUpManager.cpp.s
+
+.PHONY : SignUpManager.s
+
+# target to generate assembly for a file
+SignUpManager.cpp.s:
+	$(MAKE) -f CMakeFiles/mlpQuizApp.dir/build.make CMakeFiles/mlpQuizApp.dir/SignUpManager.cpp.s
+.PHONY : SignUpManager.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -279,6 +306,9 @@ help:
 	@echo "... Question.o"
 	@echo "... Question.i"
 	@echo "... Question.s"
+	@echo "... SignUpManager.o"
+	@echo "... SignUpManager.i"
+	@echo "... SignUpManager.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

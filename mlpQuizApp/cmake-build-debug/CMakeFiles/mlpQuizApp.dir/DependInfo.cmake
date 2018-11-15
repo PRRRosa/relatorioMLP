@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Person.cpp.o"
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Player.cpp.o"
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/Question.cpp.o"
+  "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/SignUpManager.cpp.o"
   "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp" "/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/cmake-build-debug/CMakeFiles/mlpQuizApp.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")

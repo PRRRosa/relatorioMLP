@@ -106,6 +106,12 @@
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h">
 			<Option target="mlpQuizApp"/>
 		</Unit>
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
 		<Unit filename="/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp">
 			<Option target="mlpQuizApp"/>
 		</Unit>

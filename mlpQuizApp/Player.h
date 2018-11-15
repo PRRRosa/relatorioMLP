@@ -11,11 +11,11 @@
 class Player:public Person
 {
 private:
-    int score;
+    int _score;
 public:
     Player(std::string name);
     ~Player();
-    int getScore();
+    int getScore() const { return _score; };
     void setScore(int score);
     void print();
 };
