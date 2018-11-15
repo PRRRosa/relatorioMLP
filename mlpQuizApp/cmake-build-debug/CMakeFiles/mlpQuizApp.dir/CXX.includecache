@@ -6,6 +6,16 @@
 
 #IncludeRegexTransform: 
 
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
+string
+-
+vector
+-
+Question.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
+Object.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
+
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
 
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
@@ -24,6 +34,14 @@ iostream
 string
 -
 
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
+iostream
+-
+string
+-
+vector
+-
+
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.cpp
 SignUpManager.h
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.h
@@ -33,6 +51,22 @@ iostream
 -
 string
 -
+Player.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Templates.cpp
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp
+iostream
+-
+ctime
+-
+Database.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
+Templates.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Templates.cpp
+SignUpManager.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.h
 Player.h
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
 

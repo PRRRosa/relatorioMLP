@@ -21,7 +21,7 @@ void startQuestions() {
         std::cout << q;
 
         int answer;
-        
+
         while ( !(std::cin >> answer)) {
             std::cin.clear();
             std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
