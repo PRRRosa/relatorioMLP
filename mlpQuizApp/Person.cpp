@@ -15,7 +15,7 @@ Person::Person(std::string name)
 
 }
 
-void Person::printName()
+void Person::print()
 {
     std::cout<< "Meu nome é "<< this->name << std::endl;
 }

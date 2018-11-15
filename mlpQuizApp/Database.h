@@ -6,14 +6,19 @@
 #define MLPQUIZAPP_DATABASE_H
 
 
+#include <string>
 #include <vector>
-#import "Question.cpp"
+#include "Question.h"
+#include "Object.h"
 
-class Database
+class Database : public Object
 {
 private:
-    std::vector <Question*> questions;
+    std::vector<Question*> _questions;
 public:
+    void print() {
+    	std::cout << "Hello.";
+    }
     Database();
     ~Database();
     Question getQuestion(int index);

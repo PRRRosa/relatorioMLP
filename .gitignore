@@ -1,0 +1,12 @@
+
+mlpQuizApp/cmake-build-debug/
+mlpQuizApp/CMakeFiles/
+mlpQuizApp/\.idea/
+
+mlpQuizApp/CMakeCache\.txt
+
+mlpQuizApp/cmake_install\.cmake
+
+mlpQuizApp/Makefile
+
+mlpQuizApp/mlpQuizApp

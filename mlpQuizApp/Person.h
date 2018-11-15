@@ -7,8 +7,9 @@
 
 #include <string>
 #include <iostream>
+#include "Object.h"
 
-class Person
+class Person:Object
 {
 private:
     std::string name;
@@ -16,7 +17,7 @@ private:
 public:
     Person(std::string name);
     std::string getName();
-    virtual  void printName()=0;
+    virtual void print()=0;
 };
 
 

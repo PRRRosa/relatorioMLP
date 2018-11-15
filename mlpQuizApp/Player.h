@@ -17,7 +17,7 @@ public:
     ~Player();
     int getScore();
     void setScore(int score);
-    void printName();
+    void print();
 };
 
 #endif //MLPQUIZAPP_PLAYER_H

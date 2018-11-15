@@ -22,7 +22,7 @@ void Player::setScore(int score)
 {
     this->score = score;
 }
-void Player::printName()
+void Player::print()
 {
     std::cout<< "Meu nome é "<< getName() << " e minha pontuação é " << this->score << std::endl;
 }
