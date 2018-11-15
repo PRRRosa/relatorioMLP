@@ -6,33 +6,35 @@
 
 #IncludeRegexTransform: 
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.cpp
-Person.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
 string
 -
-iostream
+vector
 -
+Question.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
 Object.h
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
-Player.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
 iostream
 -
 string
+-
+vector
 -
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
-Person.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Templates.cpp
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/main.cpp
+Database.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
 iostream
 -
-string
+ctime
 -
+Templates.cpp
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Templates.cpp
 

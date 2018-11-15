@@ -13,18 +13,26 @@ int main() {
     database = new Database();
     database->print();
     std::cout << max(1,2);
+
     while(cont == 's')
     {
         auto q = database->getQuestion(rand()%database->getQuestionsSize());
         std::cout << q;
-        
-        int answer;
-        std::cin>>answer;
-        std::cout << (q.checkAnswer(answer) ? "Correto!" : "Errou!") << std::endl;
-        // respond(alt);
 
-        std::cout<<"Quer continuar s/n?"<<std::endl;
-        std::cin>>cont;
+        int answer;
+        while ( !(std::cin >> answer)) {
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            std::cout << "Valor inválido\n";
+        }
+
+        std::cout << (q.checkAnswer(answer) ? "Correto!" : "Errou!") << std::endl;
+        //respond(alt);
+
+
+        std::cout << "Quer continuar s/n?" << std::endl;
+        std::cin >> cont;
+
     }
 
     return 0;
