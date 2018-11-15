@@ -1,11 +1,22 @@
 #include <iostream>
 #include <ctime>
-#import "Database.h"
+#include "Database.h"
 #include "Templates.cpp"
+#include "SignUpManager.h"
+
 Database *database;
 char cont = 's';
 
+
+void didSignUp(std::string name) {
+    std::cout << "\ndidSignUp"<< name;
+}
+
 int main() {
+
+    auto signUpManager = new SignUpManager(&didSignUp);
+    signUpManager->start();
+
     srand(time(NULL));
     database = new Database();
     database->print();

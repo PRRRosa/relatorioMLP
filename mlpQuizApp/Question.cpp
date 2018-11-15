@@ -9,9 +9,10 @@ Question::Question() {
 };
 
 Question::Question(std::string description, std::vector<std::string> alternatives, int answer) {
+    //validator
     this->_description = description;
     this->_alternatives = alternatives;
-    this->_answer = answer; 
+    this->_answer = answer;
 }
 
 std::ostream &operator<< (std::ostream &output, const Question &question) {
@@ -20,13 +21,3 @@ std::ostream &operator<< (std::ostream &output, const Question &question) {
         output << i << ". " <<  question.getAlternatives()[i] << std::endl << std::endl;
     return output;
 }
-
-// void respond(int alternative)
-//     {
-//         std::cout<<"Resposta: "<<answer+1<<std::endl;
-//         if(answer+1 == alternative){
-//             std::cout<<"CORRETO"<<std::endl<<std::endl;
-//         }else{
-//             std::cout<<"ERRADO"<<std::endl<<std::endl;
-//         }
-//     }
