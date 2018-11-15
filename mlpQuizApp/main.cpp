@@ -1,7 +1,7 @@
 #include <iostream>
 #include <ctime>
 #import "Database.h"
-
+#include "Templates.cpp"
 Database *database;
 char cont = 's';
 
@@ -9,6 +9,7 @@ int main() {
     srand(time(NULL));
     database = new Database();
     database->print();
+    std::cout << max(1,2);
     while(cont == 's')
     {
         auto q = database->getQuestion(rand()%database->getQuestionsSize());
