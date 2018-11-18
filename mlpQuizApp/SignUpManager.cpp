@@ -12,3 +12,7 @@ void SignUpManager::start() {
     auto player = Player(name);
     this->_delegate(player);
 }
+void SignUpManager::print()
+{
+    std::cout<<"SignUp Manager" <<std::endl;
+}

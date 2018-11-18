@@ -40,6 +40,7 @@ void startQuestions() {
         std::cin >> cont;
 
     }
+
 }
 
 void didSignUp(Player player) {

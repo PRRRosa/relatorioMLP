@@ -16,9 +16,7 @@ class Database : public Object
 private:
     std::vector<Question*> _questions;
 public:
-    void print() {
-    	std::cout << "Hello.";
-    }
+    void print();
     Database();
     ~Database();
     Question getQuestion(int index);

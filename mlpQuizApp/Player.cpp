@@ -10,7 +10,10 @@ Player::Player(std::string name):Person(name) {
     this->_score = 0;
 }
 
-Player::~Player() {}
+Player::~Player()
+{
+    std::cout << "Jogador deletado" << std::endl;
+}
 
 void Player::setScore(int score) {
 	if (score < 0) { return; }
@@ -19,6 +22,10 @@ void Player::setScore(int score) {
 
 void Player::print() {
     std::cout<< "Meu nome é "<< this->getName() << " e minha pontuação é " << this->getScore() << std::endl;
+}
+int Player::getScore() const
+{
+    return _score;
 }
 
 

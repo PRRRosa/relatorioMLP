@@ -6,16 +6,16 @@
 
 std::string Person::getName()
 {
-    return name;
+    return _name;
 }
 
 Person::Person(std::string name)
 {
-    this->name = name;
+    this->_name = name;
 
 }
 
 void Person::print()
 {
-    std::cout<< "Meu nome é "<< this->name << std::endl;
+    std::cout<< "Meu nome é "<< this->_name << std::endl;
 }

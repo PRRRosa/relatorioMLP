@@ -91,6 +91,7 @@ Database::Database()
 Database::~Database()
 {
     delete(&_questions);
+    std::cout << "Database deletado" << std::endl;
 }
 
 Question Database::getQuestion(int index)
@@ -102,3 +103,9 @@ int Database::getQuestionsSize()
 {
     return _questions.size();
 }
+
+void Database::print()
+{
+    std::cout << "Hello.";
+}
+

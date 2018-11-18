@@ -15,6 +15,7 @@ CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Person.h
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Player.cpp
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o: ../Player.h
 
+CMakeFiles/mlpQuizApp.dir/Question.cpp.o: ../Object.h
 CMakeFiles/mlpQuizApp.dir/Question.cpp.o: ../Question.cpp
 CMakeFiles/mlpQuizApp.dir/Question.cpp.o: ../Question.h
 

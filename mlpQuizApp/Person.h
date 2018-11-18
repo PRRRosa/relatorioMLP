@@ -12,7 +12,7 @@
 class Person:Object
 {
 private:
-    std::string name;
+    std::string _name;
 
 public:
     Person(std::string name);

@@ -4,8 +4,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "Object.h"
 
-class Question {
+class Question:Object{
   private:
     std::string _description;
     std::vector<std::string> _alternatives;
@@ -13,11 +14,12 @@ class Question {
 
   public:
     Question();
+    ~Question();
     Question(std::string description, std::vector<std::string> alternatives, int answer);
-    
-    std::string getDescription() const { return _description; }
-    std::vector<std::string> getAlternatives() const { return _alternatives; }
-    bool checkAnswer(int answer) const { return _answer == answer; }
+    void print();
+    std::string getDescription() const;
+    std::vector<std::string> getAlternatives() const;
+    bool checkAnswer(int answer) const;
 };
 
 std::ostream &operator<< (std::ostream &output, const Question &question);
