@@ -444,10 +444,13 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	através da especificação de \textit{algoritmo} (método ou função genérico) utilizando o recurso oferecido pela linguagem (i.e., generics, templates ou similar)
 	e da especificação de \textit{estrutura de dados} genérica utilizando o recurso oferecido pela linguagem.
 	
-	A classe \textbf{Templates} é uma classe genérica com o método \textbf{max} para calcular o máximo entre dois valores genéricos. Ela é usada para identificar se o valor inserido para a alternativa não excede o limite de alternativas, o que causaria um erro.
+	A classe \textbf{Templates} é uma classe genérica com o método \textbf{max} para calcular o máximo entre dois valores genéricos.
 	
-	\begin{lstlisting}[language=C++, caption={Proteção de dados inválidos}]
-	
+	\begin{lstlisting}[language=C++, caption={Polimorfismo paramétrico}]
+	template <class T>
+	T max(T a, T b) {
+	return a > b ? a : b;
+	}
 	\end{lstlisting}
 	
 	\subitem 9. Usar polimorfismo por sobrecarga (vale construtores alternativos).
@@ -502,9 +505,23 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	
 	
 	\item Recursos de processamento paralelo
-	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
-	\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
+	
+	\begin{lstlisting}[language=C++, caption={Uso de Paralelismo}]
+	std::vector<Question*> scrambledQuestions;
+	#pragma omp parallel for
+	for (int i = 0; i < _questions.size(); i++) {
+	#pragma omp critical
+	scrambledQuestions.push_back(_questions[i]);
+	}
+	\end{lstlisting}
+	
+	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo
+	
+	Usou-se paralelismo na função que embaralha as questões do database com o uso da biblioteca OpenMP.
+	
+	\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares)
 
+	A seção crítica é o vetor que está sendo acessado no loop.
 \end{itemize}
 
 \section{Funcional}
@@ -539,8 +556,7 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 \end{itemize}
 \section{Análise da Linguagem}
 Uma análise da linguagem foi feita considerando diversos aspectos, como usabilidade, simplicidade, tipos de dados, entre outros (notas de um a dez, sendo dez excelente e um péssimo).
-
-\begin{table}[h!]
+\begin{table}[!h]
 	\begin{tabular}{|l|l|l|}
 		\hline
 		\textbf{Critério} & \textbf{Nota} & \textbf{Avaliação} \\ \hline
@@ -552,9 +568,9 @@ Uma análise da linguagem foi feita considerando diversos aspectos, como usabili
 		Suporte a abstração de dados & 7 & \begin{tabular}[c]{@{}l@{}}Com o uso de templates, possibilita \\ a abstração de dados\end{tabular} \\ \hline
 		Suporte a abstração de controle & 8 & \begin{tabular}[c]{@{}l@{}}Trabalha com implementação de \\ métodos, que são funções de um\\ determinado artefato. Em funcional\\  suporta implementação de funções\\ dentro de outras funções\end{tabular} \\ \hline
 		Expressividade & 8 & \begin{tabular}[c]{@{}l@{}}As bibliotecas do C++ facilitaram \\ muitas tarefas pouco convenientes\\ no C, por exemplo manipulação de \\ strings\end{tabular} \\ \hline
-		Checagem de tipos & 7 & \begin{tabular}[c]{@{}l@{}}Possui tipagem estática por padrão, \\ para tipagem dinâmica utilizar\\ cláusula \textbackslash{}textit\{virtual\}\end{tabular} \\ \hline
+		Checagem de tipos & 7 & \begin{tabular}[c]{@{}l@{}}Possui tipagem estática por padrão, \\ para tipagem dinâmica utilizar\\ cláusula \textit{virtual}\end{tabular} \\ \hline
 		Restrições de aliasing & 5 & \begin{tabular}[c]{@{}l@{}}Herdou as questões de aliasing do C,\\  o que é um ponto fraco em \\ segurança\end{tabular} \\ \hline
-		Suporte ao tratamento de exceções & 7 & \begin{tabular}[c]{@{}l@{}}Não possui um sistema tão robusto \\ quanto Java, por exemplo, não contendo\\ cláusulas \textbackslash{}textit\{finally\}, por exemplo\end{tabular} \\ \hline
+		Suporte ao tratamento de exceções & 7 & \begin{tabular}[c]{@{}l@{}}Não possui um sistema tão robusto \\ quanto Java, por exemplo, não contendo\\ cláusulas \textit{finally}, por exemplo\end{tabular} \\ \hline
 		Portabilidade & 7 & \begin{tabular}[c]{@{}l@{}}O compilador g++ é , talvez, tão \\ difundido quanto o gcc, possibilitando\\ o desenvolvimento para diversas \\ plataformas\end{tabular} \\ \hline
 		Reusabilidade & 8 & \begin{tabular}[c]{@{}l@{}}Com o suporte a OO e templates, \\ permite o reuso de diversas estruturas\end{tabular} \\ \hline
 		Tamanho de código & 6 & \begin{tabular}[c]{@{}l@{}}Dada a sintaxe do C++, as aplicações \\ costumam ter tamanho razoável\end{tabular} \\ \hline
