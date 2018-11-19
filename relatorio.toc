@@ -11,11 +11,15 @@
 \contentsline {section}{\numberline {2.4}Classes}{5}{section.2.4}
 \contentsline {section}{\numberline {2.5}Classes Abstratas}{5}{section.2.5}
 \contentsline {section}{\numberline {2.6}Polimorfismo}{6}{section.2.6}
-\contentsline {section}{\numberline {2.7}Mem\IeC {\'o}ria}{6}{section.2.7}
-\contentsline {chapter}{3~Implementa\IeC {\c c}\IeC {\~a}o}{7}{CHAPTER.3}
-\contentsline {section}{\numberline {3.1}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{7}{section.3.1}
-\contentsline {section}{\numberline {3.2}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o OO}{7}{section.3.2}
-\contentsline {section}{\numberline {3.3}Funcional}{9}{section.3.3}
-\contentsline {section}{\numberline {3.4}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o Funcional}{9}{section.3.4}
-\contentsline {section}{\numberline {3.5}Refer\IeC {\^e}ncias}{10}{section.3.5}
+\contentsline {subsection}{\numberline {2.6.1}Polimorfismo por Inclus\IeC {\~a}o}{6}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Polimorfismo Param\IeC {\'e}trico}{6}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Mem\IeC {\'o}ria}{7}{section.2.7}
+\contentsline {chapter}{3~Implementa\IeC {\c c}\IeC {\~a}o}{8}{CHAPTER.3}
+\contentsline {section}{\numberline {3.1}Orienta\IeC {\c c}\IeC {\~a}o a Objetos}{8}{section.3.1}
+\contentsline {section}{\numberline {3.2}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o OO}{8}{section.3.2}
+\contentsline {section}{\numberline {3.3}Funcional}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}Recursos utilizados para a implementa\IeC {\c c}\IeC {\~a}o Funcional}{16}{section.3.4}
+\contentsline {section}{\numberline {3.5}An\IeC {\'a}lise da Linguagem}{17}{section.3.5}
+\contentsline {section}{\numberline {3.6}Conclus\IeC {\~o}es}{17}{section.3.6}
+\contentsline {section}{\numberline {3.7}Refer\IeC {\^e}ncias}{17}{section.3.7}
 \contentsfinish 

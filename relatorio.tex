@@ -208,11 +208,37 @@ Classes abstratas são tipos que não podem ser instanciados, mas podem ser usad
 
 Não é possível usar tipos abstratos em parâmetros, tipos de retorno ou conversões. É possível usar esses tipos com ponteiros e referências.
 
+Classes abstratas em C++ são implementadas declarando pelo menos um de seus métodos como virtual puro. Um método virtual puro é especificado colocando "=0" na sua declaração. O propósito de uma classe abstrata é prover uma base na qual outras classes podem herdar atributos e métodos. Se uma subclasse X herda de uma classe abstrata Y, ela precisa implementar todos os métodos virtuais puros, caso contrário ela será considerada uma classe abstrata também. Se ela foi instanciada, um erro de compilação ocorrerá.
 
 \section{Polimorfismo}
 Objetos de uma classe que declaram ou herdam pelo menos uma função virtual são considerados polimórficos. Dentro de cada objeto deste tipo, a implementação contém informações adicionais que são usadas por chamadas de funções virtuais e por métodos auxiliares como dynamic cast ou typeid.
+\subsection{Polimorfismo por Inclusão}
+Também chamado de polimorfismo de subtipo ou polimorfismo em tempo de execução, acontece durante a execução através de uma tabela virtual. O compilador não localiza o endereço da função a ser chamada em tempo de compilação, em vez disso quando o programa é executado, a função é referenciada por um ponteiro na tabela virtual.
+\subsection{Polimorfismo Paramétrico}
+Polimorfismo paramétrico possibilita executar um mesmo código para qualquer tipo. Em C++ polimorfismo paramétrico é implementado via templates.
+Um exemplo de template utilizado no projeto é o método \textbf{max} :
 
+	\begin{lstlisting}[language=C++, caption={Método genérico para calcular o máximo entre dois argumentos genéricos}]
 
+#include <iostream>
+#include <string>
+
+template <class T>
+T max(T a, T b) {
+	return a > b ? a : b;
+}
+
+int main() {
+	std::cout << ::max(9, 5) << std::endl;     // 9
+	
+	std::string foo("foo"), bar("bar");
+	std::cout << ::max(foo, bar) << std::endl; // "foo"
+}
+
+\end{lstlisting}
+
+Contudo, esse método não funciona em ponteiros porque comparar ponteiros é comparar o local de memória e não o conteúdo. Para funcionar com ponteiros, deve-se especificar um template para ponteiros, o que deixaria de ser polimorfismo paramétrico e passaria a ser ad-hoc.
+Polimorfismo paramétrico também é chamado de polimorfismo em tempo de compilação, já que ocorre durante a compilação.
 
 
 \section{Memória}
@@ -267,32 +293,213 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	};
 	\end{lstlisting}
 	
-	\subitem 2. Fazer uso de encapsulamento e proteção dos atributos, com os devidos métodos de manipulação (setters/getters) ou propriedades de acesso, em especial com validação dos valores (parâmetros) TODO para que estejam dentro do esperado ou gerem exceções caso contrário TODO.
+	\subitem 2. Fazer uso de encapsulamento e proteção dos atributos, com os devidos métodos de manipulação (setters/getters) ou propriedades de acesso, em especial com validação dos valores (parâmetros) para que estejam dentro do esperado ou gerem exceções caso contrário.
 	
 	Observando o Listing 3.1 o atributo  \textbf{score} é protegido pelos métodos \textbf{getScore} e \textbf{setScore}, impossibilitando algum desenvolvedor de ter acesso direto à esta propriedade do objeto \textbf{Player}. Isso centraliza a leitura e a escrita desse atributo, resultando em uma melhor organização do código.
+	
+	Além disso, seções do programa que precisam de entrada de dados do usuário estão devidamente protegidas contra dados indevidos, especificamente na entrada da resposta quando um laço \textit{while} impede dados inválidos. Caso a entrada não seja \textbf{int}, ela é limpa e ignorada.
+	
+	\begin{lstlisting}[language=C++, caption={Proteção de dados inválidos}]
+	while ( !(std::cin >> answer)) {
+	std::cin.clear();
+	std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+	std::cout << "Valor invalido\n";
+	}
+	\end{lstlisting}
 	
 	\subitem 3. Especificação e uso de construtores-padrão para a inicialização dos atributos e, sempre que possível, de construtores alternativos.
 	
 	O listing 3.1 também demonstra o uso de um construtor não padrão que necessita somente do atributo \textbf{name} que tem especificação de tipo, garantindo então a tipagem correta deste parametro.
 	
-	\subitem 4. Especificação e uso de destrutores (ou métodos de finalização), quando necessário TODO.
+	\subitem 4. Especificação e uso de destrutores (ou métodos de finalização), quando necessário.
+	Destrutores foram especificados para mostrar uma mensagem caso sejam chamados.
+	\begin{lstlisting}[language=C++, caption={Exemplo de destrutor}]
+	Player::~Player()
+	{
+	std::cout << "Jogador deletado" << std::endl;
+	}
+	\end{lstlisting}
 	
-	\subitem 5. Organizar o código em espaços de nome diferenciados, conforme a função ou estrutura de cada classe ou módulo de programa TODO.
+	\subitem 5. Organizar o código em espaços de nome diferenciados, conforme a função ou estrutura de cada classe ou módulo de programa.
 	
-	\subitem 6. Usar mecanismo de herança, em especial com a especificação de pelo menos três níveis de hierarquia, sendo pelo menos um deles correspondente a uma classe abstrata, mais genérica, a ser implementada nas classes-filhas TODO.
+	As classes estão separadas em arquivos .h e .cpp, para cada classe ter seu determinado espaço de nome.
 	
-	\subitem 7. Utilizar polimorfismo por inclusão (variável ou coleção genérica manipulando entidades de classes filhas, chamando métodos ou funções específicas correspondentes) TODO.
+	\begin{lstlisting}[language=C++, caption={Separação entre definição e implementação}]
+	//Player.h
+	#ifndef MLPQUIZAPP_PLAYER_H
+	#define MLPQUIZAPP_PLAYER_H
+	
+	#include "Person.h"
+	#include <iostream>
+	#include <string>
+	class Player:public Person
+	{
+	private:
+	int _score;
+	public:
+	Player(std::string name);
+	~Player();
+	int getScore()const;
+	void setScore(int score);
+	void print();
+	};
+	
+	#endif //MLPQUIZAPP_PLAYER_H
+	
+	//Player.cpp
+	#include "Player.h"
+	#include <iostream>
+	#include <string>
+	
+	
+	Player::Player(std::string name):Person(name) {
+	this->_score = 0;
+	}
+	
+	Player::~Player()
+	{
+	std::cout << "Jogador deletado" << std::endl;
+	}
+	
+	void Player::setScore(int score) {
+	if (score < 0) { return; }
+	this->_score = score;
+	}
+	
+	void Player::print() {
+	std::cout<< "Meu nome e "<< this->getName() << " e minha pontuacao e " << this->getScore() << std::endl;
+	}
+	int Player::getScore() const
+	{
+	return _score;
+	}
+	\end{lstlisting}
+	
+	\subitem 6. Usar mecanismo de herança, em especial com a especificação de pelo menos três níveis de hierarquia, sendo pelo menos um deles correspondente a uma classe abstrata, mais genérica, a ser implementada nas classes-filhas.
+	
+	O projeto possui uma classe topo chamada \textbf{Object}, da qual todas as outras classes são derivadas. Ela possui um método \textbf{print} a ser sobrescrito pelas subclasses, funcionando de maneira similar ao \textit{toString} do Java. A classe abstrata \textbf{Person} é subclasse de Object e possui um atributo \textbf{name}, bem como uma implementação própria de \textbf{print}. A classe \textbf{Player} é subclasse de \textbf{Person}, herdando o atributo \textbf{name} e além de sobrescrever o método \textbf{print}, possui o atributo \textbf{score}, referente a pontuação do jogo. 
+	
+	\begin{figure}[h!]
+		\includegraphics[width=\linewidth]{dc.png}
+		\caption{Diagrama de Classes}
+		\label{fig:dc}
+	\end{figure}
+	
+	\subitem 7. Utilizar polimorfismo por inclusão (variável ou coleção genérica manipulando entidades de classes filhas, chamando métodos ou funções específicas correspondentes)
+	
+	O método \textbf{print} presente em todas as classes que herdam de \textbf{Object} é um exemplo de polimorfismo por inclusão, já que a classe \textbf{Person} possui uma implementação e \textbf{Player} possui outra.
+	
+	\begin{lstlisting}[language=C++, caption={Exemplo de polimorfismo por inclusão}]
+	//Classe Person
+	#include "Person.h"
+	
+	std::string Person::getName()
+	{
+	return _name;
+	}
+	
+	Person::Person(std::string name)
+	{
+	this->_name = name;
+	
+	}
+	
+	void Person::print()
+	{
+	std::cout<< "Meu nome e "<< this->_name << std::endl;
+	}
+	
+	//Classe Player
+	#include "Player.h"
+	#include <iostream>
+	#include <string>
+	
+	
+	Player::Player(std::string name):Person(name) {
+	this->_score = 0;
+	}
+	
+	Player::~Player()
+	{
+	std::cout << "Jogador deletado" << std::endl;
+	}
+	
+	void Player::setScore(int score) {
+	if (score < 0) { return; }
+	this->_score = score;
+	}
+	
+	void Player::print() {
+	std::cout<< "Meu nome e "<< this->getName() <<
+	 " e minha pontuacao e " << this->getScore() << std::endl;
+	}
+	int Player::getScore() const
+	{
+	return _score;
+	}
+	
+	\end{lstlisting}
 	
 	\subitem 8. Usar polimorfismo paramétrico
 	através da especificação de \textit{algoritmo} (método ou função genérico) utilizando o recurso oferecido pela linguagem (i.e., generics, templates ou similar)
-	e da especificação de \textit{estrutura de dados} genérica utilizando o recurso oferecido pela linguagem TODO.
+	e da especificação de \textit{estrutura de dados} genérica utilizando o recurso oferecido pela linguagem.
 	
-	\subitem 9. Usar polimorfismo por sobrecarga (vale construtores alternativos) TODO.
+	A classe \textbf{Templates} é uma classe genérica com o método \textbf{max} para calcular o máximo entre dois valores genéricos. Ela é usada para identificar se o valor inserido para a alternativa não excede o limite de alternativas, o que causaria um erro.
 	
-	\subitem 10. Especificar e usar delegates TODO.
+	\begin{lstlisting}[language=C++, caption={Proteção de dados inválidos}]
 	
-	\item Recursos extras
-	\subitem Exemplo de recurso extra
+	\end{lstlisting}
+	
+	\subitem 9. Usar polimorfismo por sobrecarga (vale construtores alternativos).
+	
+	A classe \textbf{Question} possui dois construtores: Um padrão sem argumentos, para construir uma pergunta genérica e outro com os parâmetros de enunciado, alternativas e resposta.
+	
+	\begin{lstlisting}[language=C++, caption={Construtores da classe Question}]
+	Question::Question() {
+	this->_description = "Description";
+	this->_answer = 0;
+	
+	std::vector<std::string> alternatives {"Option 1", "Option 2"};
+	this->_alternatives = alternatives;
+	};
+	
+	Question::Question(std::string description, std::vector<std::string> alternatives, int answer) {
+	this->_description = description;
+	this->_alternatives = alternatives;
+	this->_answer = answer;
+	}
+	\end{lstlisting}
+	
+	\subitem 10. Especificar e usar delegates.
+	
+	Delegates são utilizados na classe \textbf{SignUpManager} para cadastrar um jogador com o \textbf{SignUpManagerDelegate}:
+	
+	\begin{lstlisting}[language=C++, caption={Uso de delegate}]
+	typedef void SignUpManagerDelegate(Player);
+	
+	class SignUpManager:Object {
+	public:
+	SignUpManager(SignUpManagerDelegate delegate);
+	void start();
+	void print();
+	private:
+	SignUpManagerDelegate* _delegate;
+	};
+	
+	SignUpManager::SignUpManager(SignUpManagerDelegate delegate) {
+	this->_delegate = delegate;
+	};
+	
+	void SignUpManager::start() {
+	std::string name;
+	std::cout << "Escolha um nome de usuario: ";
+	std::getline(std::cin, name);
+	
+	auto player = Player(name);
+	this->_delegate(player);
+	}
+	\end{lstlisting}
+	
 	
 	\item Recursos de processamento paralelo
 	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
@@ -330,6 +537,13 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 		\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
 	
 \end{itemize}
+\section{Análise da Linguagem}
+Uma análise da linguagem foi feita considerando diversos aspectos, como usabilidade, simplicidade, tipos de dados, entre outros.
+
+\section{Conclusões}
+
+A linguegem C++ é muito boa para ser utilizada no contexto de orientação a objetos ou programação procedural. Como é uma linguagem derivada do C, possui muitas ferramentas herdadas e facilitou o uso de muitas operações com a adição de bibliotecas (std::vector e std::string, por exemplo). Porém, em programação funcional a tarefa se tornou bem difícil, pois a sintaxe é bastante complicada de entender e as bibliotecas de suporte não são otimizadas para esse paradigma, causando muita dificuldade para implementar funções de simples comportamento. Contudo, após as funções iniciais serem criadas, o reuso é bem amplo.
+No geral, C++ é otimizada para aplicações utilizando orientação a objetos, com diversas ferramentas compatíveis(interfaces gráficas, motores de jogos,etc.), possuindo também suporte a programação funcional, mas não sendo a escolha ideal para tal, havendo linguagens mais bem estruturadas para esse paradigma (como R e Haskell, por exemplo).
 
 \section{Referências}
 \begin{itemize}[leftmargin=3em]
@@ -342,6 +556,9 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	
 	\item\url{https://en.cppreference.com/w/cpp/language/objectPolymorphic_objects}: Polymorphic Objects
 	\item\url{https://en.cppreference.com/w/cpp/language/abstract_class}: Abstract Classes
+	\item \url{http://www.cplusplus.com/info/history/}
+	\item \url{http://www.catonmat.net/blog/cpp-polymorphism/}
+	
 	
 \end{itemize}
 
