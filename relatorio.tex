@@ -444,10 +444,13 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	através da especificação de \textit{algoritmo} (método ou função genérico) utilizando o recurso oferecido pela linguagem (i.e., generics, templates ou similar)
 	e da especificação de \textit{estrutura de dados} genérica utilizando o recurso oferecido pela linguagem.
 	
-	A classe \textbf{Templates} é uma classe genérica com o método \textbf{max} para calcular o máximo entre dois valores genéricos. Ela é usada para identificar se o valor inserido para a alternativa não excede o limite de alternativas, o que causaria um erro.
+	A classe \textbf{Templates} é uma classe genérica com o método \textbf{max} para calcular o máximo entre dois valores genéricos.
 	
-	\begin{lstlisting}[language=C++, caption={Proteção de dados inválidos}]
-	
+	\begin{lstlisting}[language=C++, caption={Polimorfismo paramétrico}]
+	template <class T>
+	T max(T a, T b) {
+	return a > b ? a : b;
+	}
 	\end{lstlisting}
 	
 	\subitem 9. Usar polimorfismo por sobrecarga (vale construtores alternativos).
@@ -502,9 +505,23 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 	
 	
 	\item Recursos de processamento paralelo
-	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
-	\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
+	
+	\begin{lstlisting}[language=C++, caption={Uso de Paralelismo}]
+	std::vector<Question*> scrambledQuestions;
+	#pragma omp parallel for
+	for (int i = 0; i < _questions.size(); i++) {
+	#pragma omp critical
+	scrambledQuestions.push_back(_questions[i]);
+	}
+	\end{lstlisting}
+	
+	\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo
+	
+	Usou-se paralelismo na função que embaralha as questões do database com o uso da biblioteca OpenMP.
+	
+	\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares)
 
+	A seção crítica é o vetor que está sendo acessado no loop.
 \end{itemize}
 
 \section{Funcional}
