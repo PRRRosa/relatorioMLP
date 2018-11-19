@@ -11,25 +11,23 @@ CMakeFiles/mlpQuizApp.dir/Person.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
 CMakeFiles/mlpQuizApp.dir/Player.cpp.o
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
-CMakeFiles/mlpQuizApp.dir/Question.cpp.o
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
+CMakeFiles/mlpQuizApp.dir/Question.cpp.o
 CMakeFiles/mlpQuizApp.dir/SignUpManager.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.h
 CMakeFiles/mlpQuizApp.dir/main.cpp.o
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
- /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
+ /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/SignUpManager.h
  /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Templates.cpp

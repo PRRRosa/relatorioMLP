@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="mlpQuizApp"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/Users/leonardodalcin/relatorioMLP/mlpQuizApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/Users/leonardodalcin/relatorioMLP/mlpQuizApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/Users/leonardodalcin/relatorioMLP/mlpQuizApp"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mlpQuizApp">
+				<Option output="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/mlpQuizApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/leonardodalcin/relatorioMLP/mlpQuizApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 mlpQuizApp"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="mlpQuizApp/fast">
+				<Option output="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/mlpQuizApp" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/leonardodalcin/relatorioMLP/mlpQuizApp"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 mlpQuizApp/fast"/>
+					<CompileFile command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -f &quot;/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Database.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Person.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Person.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Player.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Player.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/SignUpManager.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/SignUpManager.h">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/main.cpp">
+			<Option target="mlpQuizApp"/>
+		</Unit>
+		<Unit filename="/Users/leonardodalcin/relatorioMLP/mlpQuizApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

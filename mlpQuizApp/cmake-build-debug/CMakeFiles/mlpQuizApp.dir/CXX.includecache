@@ -6,43 +6,25 @@
 
 #IncludeRegexTransform: 
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.cpp
+Database.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
 
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
-string
--
-iostream
--
-Object.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.cpp
-Player.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
-iostream
--
-string
--
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Player.h
-Person.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Person.h
-iostream
--
-string
--
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.cpp
-Question.h
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
-
-/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
-iostream
--
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Database.h
 string
 -
 vector
 -
+Question.h
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
 Object.h
 /Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Object.h
+
+/Users/paulorrr/Desktop/relatorioMLP/mlpQuizApp/Question.h
+=======
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.cpp
+Question.h
+/Users/leonardodalcin/relatorioMLP/mlpQuizApp/Question.h
 
