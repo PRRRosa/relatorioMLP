@@ -530,28 +530,46 @@ Além dessas classes, uma classe Database está incluída para gravar dados do p
 \begin{itemize}
 	\item Recursos mínimos sugeridos
 	
-	\subitem 1. Priorizar o uso de elementos imutáveis e funções puras (por exemplo, sempre precisar manipular listas, criar uma nova e não modificar a original, seja por recursão ou através de funções de ordem maior). TODO
+	\begin{lstlisting}std::function < std::vector<bool> ( std::vector<Question*>, std::function< bool(Question*) > ) > questionsApply = [](std::vector<Question*> questions, std::function<bool(Question*)> appliedFunc) -> std::vector<bool> {
+	if (questions.empty()) { 
+	return std::vector<bool>();
+	}
 	
-	\subitem 2. Especificar e usar funções não nomeadas (ou lambda) TODO.
+	Question* question = questions.front();
+	questions.erase(questions.begin());
 	
-	\subitem 3. Especificar e usar funções que usem currying TODO.
+	auto correct = appliedFunc(question);
 	
-	\subitem 4. Especificar funções que utilizem pattern matching ao máximo, na sua definição TODO.
+	// auto answers = askQuestions(questions);
+	auto answers = questionsApply(questions, appliedFunc);
+	if (answers.empty()) {
+	return std::vector<bool> {correct};
+	} else {
+	answers.insert(answers.begin(), correct);
+	return answers;
+	}
+	};
+	\end{lstlisting}
 	
-	\subitem 5. Especificar e usar funções de ordem superior (maior) criadas pelo programador TODO.
+	Este método cumpre com vários requisitos. Ele é uma função de ordem superior, pois aceita uma lista de perguntas e uma função para aplicar a cada uma delas. Ela usa recursão como mecanismo de iteração ao remover um item da lista e realizar a recursão com o resto da lista. E quando ela é chamada, é possível verificar que funções estão sendo usadas como elementos de 1ª ordem já que elas são passadas como argumento.
 	
-	\subitem 6. Usar funções de ordem maior prontas (p.ex., map, reduce, foldr/foldl ou similares) TODO.
 	
-	\subitem 7. Especificar e usar funções como elementos de 1ª ordem TODO.
+	\begin{lstlisting}auto answers = questionsApply(questionsList, [](Question* question) -> bool {
+	int answer;
+	std::cout << question;
+	std::cin >> answer;
+	auto correct = question->checkAnswer(answer);
+	if (correct) {
+	std::cout << "\x1B[32m" << "Acertou!" << "\x1B[0m" << std::endl;
+	} else {
+	std::cout << "\x1B[31m" << "Errou!" << "\x1B[0m" << std::endl;
+	}
+	return correct;
+	});
+	\end{lstlisting}
 	
-	\subitem 8.Usar recursão como mecanismo de iteração (pelo menos em funções de ordem superior que manipulem listas) TODO.
+	Aqui demonstra-se o uso de uma função lambda, que foi passada como parâmetro para questionsApply.
 	
-	\item Recursos extras
-	\subitem Exemplo de recurso extra
-	
-	\item Recursos de processamento paralelo
-		\subitem 1. Definição, uso e gerência de unidades (threads, módulos, classes, métodos, funções, trechos ou instruções) de execução concorrente e o seu sincronismo TODO
-		\subitem 2. Definição, uso e gerência de regiões críticas (variáveis, arrays, coleções ou similares) TODO
 	
 \end{itemize}
 \section{Análise da Linguagem}
