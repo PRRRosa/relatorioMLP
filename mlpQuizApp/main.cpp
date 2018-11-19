@@ -27,23 +27,23 @@ std::function < std::vector<bool> ( std::vector<Question*>, std::function< bool(
     }
 };
 
-std::function < bool(Question*) > askQuestion = [](Question* question) -> bool {
-    int answer;
-    std::cout << question;
-    std::cin >> answer;
-    auto correct = question->checkAnswer(answer);
-    if (correct) {
-        std::cout << "\x1B[32m" << "Acertou!" << "\x1B[0m" << std::endl;
-    } else {
-        std::cout << "\x1B[31m" << "Errou!" << "\x1B[0m" << std::endl;
-    }
-    return correct;
-};
+// std::function < bool(Question*) > askQuestion = ;
 
 int main() {
     database = new Database();
     auto questionsList = database->getQuestions();
-    auto answers = questionsApply(questionsList, askQuestion);
+    auto answers = questionsApply(questionsList, [](Question* question) -> bool {
+        int answer;
+        std::cout << question;
+        std::cin >> answer;
+        auto correct = question->checkAnswer(answer);
+        if (correct) {
+            std::cout << "\x1B[32m" << "Acertou!" << "\x1B[0m" << std::endl;
+        } else {
+            std::cout << "\x1B[31m" << "Errou!" << "\x1B[0m" << std::endl;
+        }
+        return correct;
+    });
 }
 
 // int main2() {
