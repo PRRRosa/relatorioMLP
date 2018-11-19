@@ -15,9 +15,16 @@ Question::Question(std::string description, std::vector<std::string> alternative
 }
 
 std::ostream &operator<< (std::ostream &output, const Question &question) {
-    output << std::endl << question.getDescription() << std::endl;
+    output << std::endl << "\x1B[34m" << question.getDescription() << "\x1B[0m" << std::endl;
     for (int i=0; i < question.getAlternatives().size(); i++)
-        output << i << ". " <<  question.getAlternatives()[i] << std::endl << std::endl;
+        output << "\x1B[34m" << i << ". " << "\x1B[0m" << question.getAlternatives()[i] << std::endl << std::endl;
+    return output;
+}
+
+std::ostream &operator<< (std::ostream &output, Question *question) {
+    output << std::endl << "\x1B[34m" << question->getDescription() << "\x1B[0m" << std::endl;
+    for (int i=0; i < question->getAlternatives().size(); i++)
+        output << "\x1B[34m" << i << ". " << "\x1B[0m" <<  question->getAlternatives()[i] << std::endl << std::endl;
     return output;
 }
 

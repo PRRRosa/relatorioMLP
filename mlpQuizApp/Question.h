@@ -21,4 +21,5 @@ class Question {
 };
 
 std::ostream &operator<< (std::ostream &output, const Question &question);
+std::ostream &operator<< (std::ostream &output, Question *question);
 #endif

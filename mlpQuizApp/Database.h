@@ -18,5 +18,6 @@ public:
     Database();
     ~Database();
     Question getQuestion(int index);
+    std::vector<Question*> getQuestions() {return _questions;};
     int getQuestionsSize();
 };
