@@ -544,22 +544,23 @@ Uma análise da linguagem foi feita considerando diversos aspectos, como usabili
 	\begin{tabular}{|l|l|l|}
 		\hline
 		\textbf{Critério} & \textbf{Nota} & \textbf{Avaliação} \\ \hline
-		Simplicidade & 5 & \begin{tabular}[c]{@{}l@{}}Não é uma linguagem trivial de aprender, \\ já que possui muitas ferramentas e \\ especialmente na parte funcional, é de \\ nível difícil\end{tabular} \\ \hline
-		Ortogonalidade & 6 & \begin{tabular}[c]{@{}l@{}}Possui as primitivas básicas de uma \\ linguagem, como int, float, char, long.\\ Diferente de C, possui bool e string.\end{tabular} \\ \hline
-		Estrutura de controle &  &  \\ \hline
-		Tipos de dados &  &  \\ \hline
-		Estruturas de dados &  &  \\ \hline
-		Suporte a abstração de dados &  &  \\ \hline
-		Suporte a abstração de controle &  &  \\ \hline
-		Expressividade &  &  \\ \hline
-		Checagem de tipos &  &  \\ \hline
-		Restrições de aliasing &  &  \\ \hline
-		Suporte ao tratamento de exceções &  &  \\ \hline
-		Portabilidade &  &  \\ \hline
-		Reusabilidade &  &  \\ \hline
-		Tamanho de código & 5 &  \\ \hline
+		Simplicidade & 5 & \begin{tabular}[c]{@{}l@{}}Não é uma linguagem trivial de aprender, \\ já que possui muitas ferramentas\\  e  especialmente na parte funcional, é de \\ nível difícil\end{tabular} \\ \hline
+		Ortogonalidade & 6 & \begin{tabular}[c]{@{}l@{}}Possui as primitivas básicas de uma\\  linguagem, como int, float, char, long.\\  Diferente de C, possui bool e string.\end{tabular} \\ \hline
+		Estrutura de controle & 7 & \begin{tabular}[c]{@{}l@{}}Possui operadores básicos de controle,\\  como iteradores e variáveis\\ de controle\end{tabular} \\ \hline
+		Tipos de dados & 7 & \begin{tabular}[c]{@{}l@{}}Possui suporte a classes customizadas, \\ podendo criar um tipo específico\\ ou um tipo genérico, mas algumas \\ funcionalidades não são reutilizáveis\\ por padrão, como imprimir um objeto,\\  sendo necessário reimplementar\\ o operador \textless{}\textless{}\end{tabular} \\ \hline
+		Estruturas de dados & 8 & \begin{tabular}[c]{@{}l@{}}Possui estruturas de dados robustas, \\ incluindo certas bibliotecas\end{tabular} \\ \hline
+		Suporte a abstração de dados & 7 & \begin{tabular}[c]{@{}l@{}}Com o uso de templates, possibilita \\ a abstração de dados\end{tabular} \\ \hline
+		Suporte a abstração de controle & 8 & \begin{tabular}[c]{@{}l@{}}Trabalha com implementação de \\ métodos, que são funções de um\\ determinado artefato. Em funcional\\  suporta implementação de funções\\ dentro de outras funções\end{tabular} \\ \hline
+		Expressividade & 8 & \begin{tabular}[c]{@{}l@{}}As bibliotecas do C++ facilitaram \\ muitas tarefas pouco convenientes\\ no C, por exemplo manipulação de \\ strings\end{tabular} \\ \hline
+		Checagem de tipos & 7 & \begin{tabular}[c]{@{}l@{}}Possui tipagem estática por padrão, \\ para tipagem dinâmica utilizar\\ cláusula \textbackslash{}textit\{virtual\}\end{tabular} \\ \hline
+		Restrições de aliasing & 5 & \begin{tabular}[c]{@{}l@{}}Herdou as questões de aliasing do C,\\  o que é um ponto fraco em \\ segurança\end{tabular} \\ \hline
+		Suporte ao tratamento de exceções & 7 & \begin{tabular}[c]{@{}l@{}}Não possui um sistema tão robusto \\ quanto Java, por exemplo, não contendo\\ cláusulas \textbackslash{}textit\{finally\}, por exemplo\end{tabular} \\ \hline
+		Portabilidade & 7 & \begin{tabular}[c]{@{}l@{}}O compilador g++ é , talvez, tão \\ difundido quanto o gcc, possibilitando\\ o desenvolvimento para diversas \\ plataformas\end{tabular} \\ \hline
+		Reusabilidade & 8 & \begin{tabular}[c]{@{}l@{}}Com o suporte a OO e templates, \\ permite o reuso de diversas estruturas\end{tabular} \\ \hline
+		Tamanho de código & 6 & \begin{tabular}[c]{@{}l@{}}Dada a sintaxe do C++, as aplicações \\ costumam ter tamanho razoável\end{tabular} \\ \hline
 	\end{tabular}
 \end{table}
+
 
 \section{Conclusões}
 
